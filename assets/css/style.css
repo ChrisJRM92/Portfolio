@@ -432,7 +432,7 @@ html {
 }
 
 /* ============= Home ============= */
-.home12{
+.home1{
 	background-color: var(--bg-color-section1);
 	position: absolute;
 	z-index: -1;
@@ -443,7 +443,7 @@ html {
 
 
 .home {
-	background-color: var(--bg-color-section1);
+	/* background-color: var(--bg-color-section1); */
 	position: relative;
 	overflow: hidden;
 
