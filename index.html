@@ -8,7 +8,7 @@
 		<meta name="author" content="Christian Romero" />
 		<meta name="description" content="Hola, soy Christian Romero desarrollador full stacks" />
 		<meta name="keywords" content="fullstacks, frontend, backend"/>
-		<meta name="theme-color" content="#09f"/>
+		<meta name="theme-color" content="#1C2833"/>
 
 		<!-- Fuente  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,11 +46,11 @@
 				<div id="nav" class="navbar__menu">
 					<a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
 					<ul class="navbar__list flex--container">
-						<li class="navbar__item"><a class="navbar__link active" href="#home">Inicio</a></li>
-						<li class="navbar__item"><a class="navbar__link" href="#about">Acerca de Mí</a></li>
-						<li class="navbar__item"><a class="navbar__link" href="#skills">Habilidades</a></li>
-						<li class="navbar__item"><a class="navbar__link" href="#projects">Portafolio</a></li>
-						<li class="navbar__item"><a class="navbar__link" href="#contact">Contacto</a></li>
+						<li class="navbar__item"><a class="navbar__link active" href="#home" id="nav_home">Inicio</a></li>
+						<li class="navbar__item"><a class="navbar__link" href="#about" id="nav_about">Acerca de Mí</a></li>
+						<li class="navbar__item"><a class="navbar__link" href="#skills" id="nav_skills">Habilidades</a></li>
+						<li class="navbar__item"><a class="navbar__link" href="#projects" id="nav_portfolio">Portafolio</a></li>
+						<li class="navbar__item"><a class="navbar__link" href="#contact" id="nav_contact">Contacto</a></li>
 					</ul>
 				</div>
 				<div class="navbar__toggles flex--container">
@@ -63,10 +63,7 @@
 					</div>
 					<div class="navbar__toggle--language flex--container">
 						<input type="checkbox" id="language-toggle" class="navbar__toggle--language-input"/>
-						<label
-							for="language-toggle"
-							class="navbar__toggle--language-label"
-						></label>
+						<label for="language-toggle" class="navbar__toggle--language-label"></label>
 					</div>
 				</div>
 				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
@@ -76,7 +73,7 @@
 
 		<main>
 			<section id="home" class="home">
-				<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+				<!-- <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i> -->
 				<i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
 				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
 				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
@@ -84,7 +81,7 @@
 				<i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
 				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
 				<i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
-				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+				<!-- <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i> -->
 				<i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
 				<!-- <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i> -->
 				<div class="home__container grid--container">
@@ -100,24 +97,20 @@
 					</ul>
                     <!-- Descripción general -->
 					<div class="home__info">
-						<h1 class="home__title">Hey, soy Christian</h1>
-						<p class="home__description">Desarrollador full stacks apasionado por la técnologia y la programación</p>
+						<h1 class="home__title" id="home__title">Hey, soy Christian</h1>
+						<p class="home__description" id="home__description">Desarrollador full stacks apasionado por la técnologia y la programación</p>
 					</div>
                     <!-- Boton descargar CV -->
 					<div class="home__buttons">
-						<a class="btn btn--primary" href="" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">Descargar CV</a>
+						<a class="btn btn--primary" href="assets/CV/CV_2024_Electricista.pdf" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow" id="download__CV">Descargar CV</a>
 					</div>
 				</div>
 			</section>
 			<section id="about" class="about section">
-				<h2 class="section__title">Acerca de Mí</h2>
+				<h2 class="section__title" id="about__me">Acerca de Mí</h2>
 
 				<div class="about__container grid--container">
-					<p class="about__description">
-						Desarrollador full stacks e ingeniero electromecánico comprometido con la operatividad y 
-                        funcionabilidad de sistemas, complemento mis conocimientos adquiridos
-                        a lo largo de mi carrera para brindar soluciones óptimas.
-					</p>
+					<p class="about__description" id="about__description">Desarrollador full stacks e ingeniero electromecánico comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos. </p>
 
 					<div class="about__cards flex--container">
 						<div class="about__card">
@@ -125,7 +118,7 @@
 						</div>
 
 						<div class="about__card">
-							<img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador" title="Desarrollando prototipo en electrónica"/>
+							<img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador" title="Culminando mantenimiento general"/>
 						</div>
 						
                         <div class="about__card">
@@ -136,9 +129,9 @@
 				</div>
 			</section>
 			<section id="skills" class="skills section">
-				<h2 class="section__title">Habilidades como desarrollador de software</h2>
+				<h2 class="section__title" id="skills_title">Habilidades</h2>
 				<div class="skills__container grid--container">
-					<p class="skills__description flex--container">Como desarollador full stacks poseo habiliades para la creación de plataformas inteligentes, tanto en el desarrollo de interfaces de usuario como en la funcionalidad del lado del backend. Ademas poseo habilidades en el despliegue y mantenimiento de aplicaciones en entornos de producción. </p>
+					<p class="skills__description flex--container" id="skills__description">Como desarollador full stacks poseo habiliades para la creación de plataformas inteligentes, tanto en el desarrollo de interfaces de usuario como en la funcionalidad del lado del backend. Ademas poseo habilidades en el despliegue y mantenimiento de aplicaciones en entornos de producción. </p>
 
 					<div class="skills__wrapper flex--container">
 						<div class="skills__cards flex--container">
@@ -148,7 +141,7 @@
 								</summary>
 								<div class="skills__card-container">
 									<h3 class="skills__card-title">HTML</h3>
-                                    <p class="skills__card-description">Poseo habiliades sólidas en HTML como estructurar correctamente un documento html, usar correctamente las etiquetas semanticas, asignar correctamente atributos y valores necesarios para el posicionamiento y optimización en motores de búsqueda SEO.</p>
+                                    <p class="skills__card-description" id="skills_html5">Poseo habiliades sólidas en HTML como estructurar correctamente un documento html, usar correctamente las etiquetas semanticas, asignar correctamente atributos y valores necesarios para el posicionamiento y optimización en motores de búsqueda SEO.</p>
 								</div>
 							</details>
 							<details class="skills__cards-container" name="moreInfo">
@@ -157,7 +150,7 @@
 								</summary>
 								<div class="skills__card-container">
 									<h3 class="skills__card-title">CSS3</h3>
-                                    <p class="skills__card-description">Cuento con las mejores habilidades para la correcta creacion de estilado en css, dominio total del diseño responsivo y estilado correcto para garantizar una aplicaciones escalables.</p>
+                                    <p class="skills__card-description" id="skills_css">Cuento con las mejores habilidades para la correcta creacion de estilado en css, dominio total del diseño responsivo y estilado correcto para garantizar una aplicaciones escalables.</p>
 								</div>
 							</details>
 							<details class="skills__cards-container" name="moreInfo">
@@ -166,7 +159,7 @@
 								</summary>
 								<div class="skills__card-container">
 									<h3 class="skills__card-title">Javascript</h3>
-									<p class="skills__card-description">Poseo habiliades sólidas de javascript como el entendimiento de la sintaxis básica, dominio y manipulación del DOM, conocimientos sobre como manejar eventos del usuario, el uso del los distintos frameworks y bibliotecas y el dominio de testing y debugging para una correcta optimización.</p>
+									<p class="skills__card-description" id="skills_js">Poseo habiliades sólidas de javascript como el entendimiento de la sintaxis básica, dominio y manipulación del DOM, conocimientos sobre como manejar eventos del usuario, el uso del los distintos frameworks y bibliotecas y el dominio de testing y debugging para una correcta optimización.</p>
 								</div>
 							</details>
 							<details class="skills__cards-container" name="moreInfo">
@@ -175,29 +168,26 @@
 								</summary>
 								<div class="skills__card-container">
 									<h3 class="skills__card-title">React</h3>
-
-									<p class="skills__card-description">
-										Cuento con habilidades necesarias en react como la comprensión de componentes, estado y ciclo de vida de un componente, trafico de datos props entre componentes, manejo de eventos y el dominio de testing y depuración para garantizar una aplicación totalmente escalable y de facil mantenimiento. 
-									</p>
+									<p class="skills__card-description" id="skills_react">Cuento con habilidades necesarias en react como la comprensión de componentes, estado y ciclo de vida de un componente, trafico de datos props entre componentes, manejo de eventos y el dominio de testing y depuración para garantizar una aplicación totalmente escalable y de facil mantenimiento.</p>
 								</div>
 							</details>
 						</div>
 					</div>
 					<div class="skills__tags flex--container">
-						<h3 class="skills__tags-title">Habilidades Blandas</h3>
+						<h3 class="skills__tags-title" id="soft_skills">Habilidades Blandas</h3>
 						<div class="skills__tags-container flex--container">
-							<span class="skills__tag">Responsable</span>
-							<span class="skills__tag">Trabajo en equipo</span>
-							<span class="skills__tag">Creativo</span>
-							<span class="skills__tag">Puntual</span>
-							<span class="skills__tag">Proactivo</span>
-							<span class="skills__tag">Autodidacta</span>
+							<span class="skills__tag" id="skill_1">Responsable</span>
+							<span class="skills__tag" id="skill_2">Trabajo en equipo</span>
+							<span class="skills__tag" id="skill_3">Creativo</span>
+							<span class="skills__tag" id="skill_4">Puntual</span>
+							<span class="skills__tag" id="skill_5">Proactivo</span>
+							<span class="skills__tag" id="skill_6">Autodidacta</span>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="projects" class="projects section">
-				<h2 class="section__title">Proyectos</h2>
+				<h2 class="section__title" id="projects_title">Proyectos</h2>
 
 				<div class="projects__container grid--container">
 					<div class="projects__project">
@@ -211,12 +201,12 @@
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Proyecto 1</h3>
-								<p class="projects__description">Desarrollo de aplicación Android para el control de luces de plantas independientes de proyecto de arquitectura para estudiantes de UIDE.</p>
+								<h3 class="projects__name" id="project_1">Proyecto 1</h3>
+								<p class="projects__description" id="project_1_description">Desarrollo de aplicación Android para el control de luces de plantas independientes de proyecto de arquitectura para estudiantes de UIDE.</p>
 
 								<div class="projects__buttons">
-									<a href="https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing" target="_blank"><button class="btn projects__button" type="button">VER DEMO</button></a>
-									<a href="https://github.com/ChrisJRM92/uide_project" target="_blank"><button class="btn projects__button" type="button">VER CÓDIGO</button></a>
+									<a href="https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing" target="_blank"><button class="btn projects__button" type="button" id="see_demo">VER DEMO</button></a>
+									<a href="https://github.com/ChrisJRM92/uide_project" target="_blank"><button class="btn projects__button" type="button" id="see_code">VER CÓDIGO</button></a>
 								</div>
 							</div>
 						</div>
@@ -229,12 +219,12 @@
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Proyecto 2</h3>
-								<p class="projects__description">Proyecto relizado para estudiantes de la carrera de ingeniería electromecánica... En desarrollo...</p>
+								<h3 class="projects__name" id="project_2">Proyecto 2</h3>
+								<p class="projects__description" id="project_2_description">Proyecto relizado para estudiantes de la carrera de ingeniería electromecánica... En desarrollo...</p>
 
 								<div class="projects__buttons">
-									<a href="https://chrisjrm92.github.io/PagWebCiem/" target="_blank"><button class="btn projects__button" type="button">VER DEMO</button></a>
-									<a href="https://github.com/ChrisJRM92/PagWebCiem" target="_blank"><button class="btn projects__button" type="button">VER CÓDIGO</button></a>
+									<a href="https://chrisjrm92.github.io/PagWebCiem/" target="_blank"><button class="btn projects__button" type="button" id="see_demo">VER DEMO</button></a>
+									<a href="https://github.com/ChrisJRM92/PagWebCiem" target="_blank"><button class="btn projects__button" type="button" id="see_code">VER CÓDIGO</button></a>
 								</div>
 							</div>
 						</div>
@@ -298,21 +288,19 @@
 				</div>
 			</section>
 			<section id="contact" class="contact section">
-				<h2 class="section__title">Contacto</h2>
+				<h2 class="section__title" id="contact_title">Contacto</h2>
 
 				<div class="contact__container grid--container">
 					<div class="contact__info">
-						<h3 class="contact__info-title">Información de contacto</h3>
-						<p class="contact__info-description">
-							Puedes contactarme en todas mis redes sociales.
-						</p>
+						<h3 class="contact__info-title" id="contact_information">Información de contacto</h3>
+						<p class="contact__info-description" id="contact_description">Puedes contactarme en todas mis redes sociales.</p>
 
 						<address class="contact__info-data">
 							<div class="contact__info-item">
 								<i class="bx bxl-whatsapp"></i>
 
 								<span class="contact__info-number">
-									<a href="https://wa.me/+593999796892?text=Tu%20Mensaje%20De%20Texto" target="_blank" rel="noreferrer nofollow">Enviar mensaje a WhatsApp</a>
+									<a href="https://wa.me/+593999796892?text=Tu%20Mensaje%20De%20Texto" target="_blank" rel="noreferrer nofollow" id="whatsapp_message">Enviar mensaje a WhatsApp</a>
 								</span>
 							</div>
 
@@ -340,56 +328,33 @@
 						</address>
 					</div>
 					<div class="contact__form">
-						<h3 class="contact__form-title">Enviar mensaje</h3>
+						<h3 class="contact__form-title" id="send_message">Enviar mensaje</h3>
 						<form id="form" class="contact__form-container">
 							<div class="contact__form-group">
-								<label for="name" class="contact__form-label">Nombre</label>
-								<input
-									type="text"
-									id="name"
-									name="name"
-									class="contact__form-input"
-								/>
+								<label for="name" class="contact__form-label" id="name_name">Nombre</label>
+								<input type="text" id="name" name="name" class="contact__form-input"/>
 							</div>
 
 							<div class="contact__form-group">
-								<label for="email" class="contact__form-label">Correo</label>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									class="contact__form-input"
-								/>
+								<label for="email" class="contact__form-label" id="email_email">Correo</label>
+								<input type="email" id="email" name="email" class="contact__form-input"/>
 							</div>
 
 							<div class="contact__form-group">
-								<label for="subject" class="contact__form-label">Asunto</label>
-								<input
-									type="text"
-									id="subject"
-									name="subject"
-									class="contact__form-input"
-								/>
+								<label for="subject" class="contact__form-label" id="subject_subject">Asunto</label>
+								<input type="text" id="subject" name="subject" class="contact__form-input"/>
 							</div>
 
 							<div class="contact__form-group">
-								<label for="message" class="contact__form-label">Mensaje</label>
-								<textarea
-									id="message"
-									name="message"
-									cols="30"
-									rows="10"
-									class="contact__form-input"
-								></textarea>
+								<label for="message" class="contact__form-label" id="message_message">Mensaje</label>
+								<textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
 							</div>
 							<dialog id="modal">
-								Formulario enviado con éxito!
+								<p class="form__dialog" id="form_dialog">Formulario enviado con éxito!</p>
 								<button type="reset" id="btn_close-modal">Cerrar</button>
 							</dialog>
 
-							<button type="submit" class="btn contact__form-button">
-								Enviar
-							</button>
+							<button type="submit" class="btn contact__form-button" id="send_send">Enviar</button>
 						</form>
 					</div>
 				</div>
@@ -399,14 +364,13 @@
 			<div class="footer__container grid--container">
 				<div class="footer__info">
 					<h3 class="footer__title">Christian Romero</h3>
-					<p class="footer__description">
-						Soy desarrollador web, apasionado por la tecnología y la
-						programación.
+					<p class="footer__description" id="footer__description">
+						Soy desarrollador web, apasionado por la tecnología y la programación.
 					</p>
 				</div>
 
 				<div class="footer__social">
-					<h3 class="footer__title">Redes Sociales</h3>
+					<h3 class="footer__title" id="social_title">Redes Sociales</h3>
 
 					<ul class="footer__social-list">
 						<li class="footer__social-item">
@@ -427,8 +391,12 @@
 					</ul>
 				</div>
 			</div>
-
-			<p class="footer__copy"></p>
+			<div class="container__footer">
+				<p class="year_update"></p>
+				<p class="copyright_description" id="copyright">Todos los derechos reservados</p>
+			</div>
+			
+			
 		</footer>
 	</body>
 </html>

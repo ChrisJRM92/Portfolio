@@ -1,9 +1,9 @@
 function updateCopyright() {
 	const currentYear = new Date().getFullYear();
 
-	const copyrightElement = document.querySelector('.footer__copy');
+	const copyrightElement = document.querySelector('.year_update');
 
-	copyrightElement.textContent = `© ${currentYear}, Todos los derechos reservados`;
+	copyrightElement.textContent = `© ${currentYear}. `;
 }
 
 export default updateCopyright;

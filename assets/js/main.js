@@ -3,13 +3,19 @@ import activeMenu from './components/selected_menu.js';
 import updateCopyright from './helpers/date_updater.js';
 import resetToHome from './helpers/reload_page.js';
 import sendEmail from './helpers/send_form.js';
+import changeLanguage from './helpers/lang.js';
 
-parallax();
+document.addEventListener('DOMContentLoaded', function() {
 
-activeMenu();
+    parallax();
 
-resetToHome();
+    activeMenu();
 
-updateCopyright();
+    resetToHome();
 
-sendEmail();
+    updateCopyright();
+
+    sendEmail();
+
+    changeLanguage();
+});

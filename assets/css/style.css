@@ -26,6 +26,7 @@
 	--bg-color-section2: light-dark(#fafafa, #212B35);
 	--bg-color-section-social: light-dark (#fafafa, #f2f2f2);
 	--bg-color-buttons: light-dark(#0057D0, #0057D0);
+	--color-form-text: light-dark(#111, #111);
 
 	/* Typografia */
 	--normal-font-size: 16px;
@@ -458,6 +459,11 @@ html {
 			left: 1.2rem;
 			flex-direction: column;
 			row-gap: var(--mr-2);
+			background-color: #eee;
+			padding: 0% 1% 0% 1%;
+			margin: auto;
+			border-radius: 15px;
+			/* position: fixed; */
 			.home__social-link {
 				color: #0057D0;
 				font-size: 1.7rem;
@@ -699,6 +705,7 @@ html {
 						border-radius: 5px;
 						background-color: #ebebeb;
 						border: 1px solid #f0f0f0;
+						color: var(--color-form-text);
 					}
 
 					textarea {
@@ -709,6 +716,37 @@ html {
 		}
 	}
 }
+
+#modal{
+	z-index: 2;
+	/* height: 20%;
+	width: 50%; */
+	align-items: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #f2f2f2;
+	border-radius: 10px;
+	padding-left: 2%;
+	background-color: #f2f2f2;
+	.form__dialog{
+		color: #111;
+	}
+	#btn_close-modal{
+		float: left;
+		/* height: 100%; */
+		margin: 0% 35% 0% 36%;
+		color: #f2f2f2;
+		background-color: #111;
+		border-style: none;
+		padding: 3% 5% 3% 5%;
+		border-radius: 5px;
+		
+		&:hover{
+		background-color: #0057D0;
+		}
+	}
+}
+
 
 /* ============= Footer ============= */
 .footer {
@@ -746,12 +784,22 @@ html {
 			}
 		}
 	}
-	.footer__copy {
-		text-align: center;
+}
+.container__footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
+	.year_update{
+		border-top: 1px solid #222;
+		padding-top: 2rem;
+	}
+	.copyright_description{
 		border-top: 1px solid #222;
 		padding-top: 2rem;
 	}
 }
+
 
 /* ============= Media Queries ============= */
 
