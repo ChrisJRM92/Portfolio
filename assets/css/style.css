@@ -433,12 +433,12 @@ html {
 
 /* ============= Home ============= */
 .home1{
-	background-color: var(--bg-color-section1);
-	position: absolute;
 	z-index: -1;
 	top: 0;
-	margin: auto;
-
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-section1);
 }
 
 
