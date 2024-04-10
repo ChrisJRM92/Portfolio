@@ -39,7 +39,13 @@
 		</script>
 	</head>
     <!-- ------------------------ -->
+	
 	<body>
+		<button class="back-to-top" type="button"></button>	
+		<style>@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/waves/0.7.5/waves.min.js"></script>
+		
 		<header class="header">
 			<nav class="navbar grid--container flex--container">
 				<a class="navbar__logo flex--container--menu" href="#"><i class="bx bx-code-alt" style="color: #0057D0;"></i>Christian Romero</a>
@@ -69,11 +75,13 @@
 				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
 			</nav>
 		</header>
-
+			
 
 		<main>
 			<section id="home" class="home">
-				<!-- <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i> -->
+		
+
+				<!-- <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
 				<i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
 				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
 				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
@@ -81,10 +89,10 @@
 				<i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
 				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
 				<i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
-				<!-- <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i> -->
+				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
 				<i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
-				<!-- <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i> -->
-				<div class="home__container grid--container">
+				<i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i> -->
+				<div id="home__container" class="home__container grid--container">
 					<div class="home__image">
 						<img src="assets/img/profile.png" alt="profile photo" title="Christian Romero"/>
 					</div>
@@ -106,6 +114,11 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- <section id="home122" class="home1"></section> -->
+			<!-- <script src="assets/js/helpers/particles.min.js" ></script> -->
+			<!-- <script src="assets/json/particlesjs-config.json" ></script> -->
+
 			<section id="about" class="about section">
 				<h2 class="section__title" id="about__me">Acerca de Mí</h2>
 
