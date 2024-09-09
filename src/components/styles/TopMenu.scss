@@ -1,0 +1,43 @@
+.container_top_menu{
+  display: flex;
+  justify-content: space-between;
+
+  .container_btns_nav{
+    display: flex;
+    gap: 10px;
+
+    .btn{
+      border-radius: 30px;
+      height: 40px;
+      width: 100px;
+      border-style: none;
+      color: lightslategrey;
+    }
+  }
+  
+
+  .container_btns_help{
+    display: flex;
+    gap: 10px;
+
+    .btn_lang, .btn_dark_mode{
+      color: #e9e9f1;
+      background-color: transparent;
+      border-style: none;
+    }
+  
+    .btnContact{
+      border-radius: 30px;
+      height: 40px;
+      width: 100px;
+      border-style: none;
+      color: #e9e9f1;
+      background-color: #0057D0;
+    }
+  }
+
+  
+
+}
+
+
