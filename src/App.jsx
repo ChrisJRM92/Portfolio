@@ -1,3 +1,4 @@
+import Content from './components/Content'
 import LateralContent from './components/LateralContent'
 import TopMenu from './components/TopMenu'
 import './styles/App.scss'
@@ -14,7 +15,7 @@ function App() {
         <div class="topMenu">
           <TopMenu/>
         </div>
-        <div class="content"> </div>
+        <div class="content"><Content/></div>
         <div class="bottomMenu"> </div>
       </div>
     </>
