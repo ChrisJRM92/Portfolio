@@ -5,31 +5,68 @@
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  background-color: #e9e9f1;
+  // background-color: #e9e9f1;
 
-  .back_color{
+  .back_color {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  .middle_color{
+  .middle_color {
     grid-area: 1 / 1 / 2 / 2;
     height: 100%;
     display: flex;
 
 
-    .middle_card{
+    .middle_card {
       background-color: #414141;
-      height: 180px;
+      height: 200px;
       width: 100%;
       align-self: flex-end;
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
       // margin-bottom: 10px;
-      
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
     }
   }
 
-  .front_content{
+  .front_content {
     grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .img_card {
+      width: 200px;
+      align-self: center;
+      margin-top: 60px;
+    }
+
+    .title_card {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #e9e9f1;
+    }
+
+    .description_card {
+      color: #e9e9f1;
+      font-size: 15px;
+    }
+
+    .butom_proyect {
+      display: flex;
+      gap: 10px;
+
+      .btn_proyects {
+        border-style: none;
+        border-radius: 30px;
+        background-color: #e9e9f1;
+        padding: 5px 15px;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+    }
   }
 }

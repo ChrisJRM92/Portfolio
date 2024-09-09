@@ -6,9 +6,9 @@ import { MdDescription } from "react-icons/md";
 
 const data = [
   { 
-    backColor: '#3498db',
+    backColor: 'transparent',
     title: 'Mazda 3 workshop manual',
-    description: 'Proyecto realizado con el fin de ofrecer una plataforma de consulta de reparacion para el vehiculo mazda 3 bk',
+    description: 'Adaptacion de manual de taller Mazda 3 BK con dominio propio',
     img: '/mm3.png'
   },
   {
@@ -31,7 +31,7 @@ const Content = () => {
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Portafolio</button>
         <h1 className="title_section">Proyectos realizados</h1>
         <div className="proyects">
-          <CardProyect data={data[0].backColor} />
+          <CardProyect data={data[0]} />
           <CardProyect />
           <CardProyect />
           <CardProyect />

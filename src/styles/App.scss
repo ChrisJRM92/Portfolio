@@ -10,7 +10,7 @@
 
 .lateralInfo {
   grid-area: 1 / 1 / 4 / 2;
-  background-color: aquamarine;
+  // background-color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,19 +19,19 @@
 
 .topMenu {
   grid-area: 1 / 2 / 2 / 4;
-  background-color: blue;
+  // background-color: blue;
   height: 10vh;
 }
 
 .content {
   grid-area: 2 / 2 / 3 / 4;
-  background-color: burlywood;
+  // background-color: burlywood;
   height: 80vh;
 }
 
 .bottomMenu {
   grid-area: 3 / 2 / 4 / 4;
-  background-color: brown;
+  // background-color: brown;
   height: 10vh;
 }
 
@@ -55,7 +55,7 @@
   }
   
   .bottomMenu {
-    background-color: brown;
+    // background-color: brown;
     position: fixed;
     bottom: 0;
     left: 0;
