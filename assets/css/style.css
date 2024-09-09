@@ -388,7 +388,7 @@ html {
 
 .back-to-top:hover,
 .back-to-top:active,
-.back-to-top:focus,{
+.back-to-top:focus{
 	outline: 0 !important;
 }
 
