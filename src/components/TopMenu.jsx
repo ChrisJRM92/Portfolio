@@ -9,7 +9,7 @@ const TopMenu = () => {
     <div className="container_top_menu">
       <div className="container_btns_nav">
         <button className="btn">Inicio</button>
-        <button className="btn">Proyectos</button>
+        <button className="btn">Portafilio</button>
         <button className="btn">Sobre mi</button>
         <button className="btn">Experiencia</button>
       </div>

@@ -1,0 +1,35 @@
+.card_proyect {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #e9e9f1;
+
+  .back_color{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .middle_color{
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    display: flex;
+
+
+    .middle_card{
+      background-color: #414141;
+      height: 180px;
+      width: 100%;
+      align-self: flex-end;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      // margin-bottom: 10px;
+      
+    }
+  }
+
+  .front_content{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
