@@ -1,0 +1,41 @@
+.header{
+
+  .btnHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6a6a70;
+    color: #e9e9f1;
+
+    .icon_star{
+      font-size: 15px;
+      color: #e9e9f1;
+    }
+  }
+
+  .title_resume{
+    color: #e9e9f1;
+    font-size: 50px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 400px) {
+  .header{
+    padding-left: 20px;
+
+    .title_resume{
+      color: #e9e9f1;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  }
+
+
+}
