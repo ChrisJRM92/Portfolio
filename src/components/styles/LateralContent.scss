@@ -43,4 +43,41 @@
     color: #e9e9f1;
     font-size: 20px;
   }
+
+  .social_networks{
+    display: flex;
+    justify-content: space-between;
+
+    .social{
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: #161616;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #6a6a70;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e9e9f1;
+      font-size: 20px;
+      margin: 5px 0 5px 0;
+    }
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+    .btn_contact{
+      height: 40px;
+      width: 200px;
+      border-style: none;
+      border-radius: 30px;
+      background-color: #0057D0;
+      color: #e9e9f1;
+      font-size: 15px;
+    }
+  }
 }

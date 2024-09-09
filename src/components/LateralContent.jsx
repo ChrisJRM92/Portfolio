@@ -1,3 +1,9 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 import './styles/LateralContent.scss'
 
 const LateralContent = () => {
@@ -12,13 +18,15 @@ const LateralContent = () => {
       <h1 className='profession'>Ing. Electromecánico</h1>
       <h1 className='profession'>Fullstack developer</h1>
       <div className='social_networks'>
-        <div className='social1'></div>
-        <div className='social2'></div>
-        <div className='social3'></div>
-        <div className='social4'></div>
-        <div className='social5'></div>
+        <div className='social'><FaGithub /></div>
+        <div className='social'><FaLinkedin /></div>
+        <div className='social'><FaWhatsapp /></div>
+        <div className='social'><FaFacebook /></div>
+        <div className='social'><FaInstagram /></div>
       </div>
-      <button>Contáctame</button>
+      <div className="btn">
+        <button className="btn_contact">Contáctame</button>
+      </div>
     </div>
   )
 }
