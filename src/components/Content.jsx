@@ -19,6 +19,13 @@ const data = [
     img: '/mokpokemon.png',
     btn_color: "#111111"
   },
+  {
+    backColor: 'transparent',
+    title: 'Weather info',
+    description: 'Consumo datos Open Weather API',
+    img: '/mokweather.png',
+    btn_color: "#111111"
+  },
 
 ]
 
@@ -34,8 +41,8 @@ const Content = () => {
         <h1 className="title_section">Proyectos realizados</h1>
         <div className="proyects">
           <CardProyect data={data[0]} />
-          <CardProyect />
-          <CardProyect />
+          <CardProyect data={data[1]}/>
+          <CardProyect data={data[2]}/>
           <CardProyect />
           <CardProyect />
           <CardProyect />
