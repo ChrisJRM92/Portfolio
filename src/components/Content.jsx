@@ -79,7 +79,7 @@ const Content = () => {
           <button className="skills">Proactivo</button>
           <button className="skills">Autodidacta</button>
         </div>
-        <div className="about">
+        <div className="experience">
           <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Experiencia</button>
           <h2 className="title_section">Conocimientos</h2>
           <p className="description_profile">Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.</p>
@@ -97,6 +97,21 @@ const Content = () => {
             <div className="skill_icon"><SiRailway /></div>
             <div className="skill_icon"><SiRender /></div>
             <div className="skill_icon"><FaAws /></div>
+          </div>
+        </div>
+        <div className="about">
+          <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Contacto</button>
+          <h2 className="title_section">Contáctame</h2>
+          <p className="description_profile">Puedes contactarme en todas mis redes sociales o mediante mensaje directo.</p>
+          <div className="container_contact">
+            <form className="form" action="">
+              <input type="text" />
+              <input type="email" />
+              <input type="text" />
+              <textarea name="" id=""></textarea>
+              <input type="submit" />
+            </form>
+            
           </div>
         </div>
 
