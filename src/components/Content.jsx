@@ -8,14 +8,16 @@ const data = [
   { 
     backColor: 'transparent',
     title: 'Mazda 3 workshop manual',
-    description: 'Adaptacion de manual de taller Mazda 3 BK con dominio propio',
-    img: '/mm3.png'
+    description: 'Adaptacion de manual de taller.',
+    img: '/mokmazda.png',
+    btn_color: "#111111"
   },
   {
-    backColor: '#111111',
-    title: 'Pokedex API',
-    description: 'Consumo de informacion de la API de pokedex',
-    img: '/mm3.png'
+    backColor: 'transparent',
+    title: 'Pokedex virtual',
+    description: 'Consumo de información PokeAPI',
+    img: '/mokpokemon.png',
+    btn_color: "#111111"
   },
 
 ]
