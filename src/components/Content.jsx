@@ -49,7 +49,14 @@ const Content = () => {
         </div>
       </div>
       <div className="about">
-      <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
+        <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
+        <h1 className="title_section">Soluciones operativas</h1>
+        <p className="description_profile">Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.</p>
+        <div className="container_img">
+          <div className="container_photo"></div>
+          <div className="container_photo"></div>
+          <div className="container_photo"></div>
+        </div>
       </div>
 
     </div>
