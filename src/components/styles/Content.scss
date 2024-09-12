@@ -40,6 +40,26 @@
       text-align: justify;
       padding-right: 20PX;
     }
+
+    .container_img{
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      // background-color: #0956d2;
+
+      .container_photo{
+        width: 250px;
+        height: 400px;
+        background-color: #464957;
+        border-radius: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: solid 1px #6a6a70;
+      }
+    }
   }
 
   
