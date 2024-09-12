@@ -46,8 +46,10 @@ const Content = () => {
           <CardProyect />
           <CardProyect />
           <CardProyect />
-
         </div>
+      </div>
+      <div className="about">
+      <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
       </div>
 
     </div>
