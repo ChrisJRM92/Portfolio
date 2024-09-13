@@ -16,7 +16,7 @@ function App() {
           <TopMenu/>
         </div>
         <div class="content"><Content/></div>
-        <div class="bottomMenu"> </div>
+        <div class="bottomMenu"></div>
       </div>
     </>
   )

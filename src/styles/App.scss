@@ -3,7 +3,7 @@
   // background-color: #e45656;
   display: grid;
   grid-template-columns: 350px 1fr 1fr;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 15% 75% 10%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -20,13 +20,13 @@
 .topMenu {
   grid-area: 1 / 2 / 2 / 4;
   // background-color: blue;
-  height: 10vh;
+  height: 15vh;
 }
 
 .content {
   grid-area: 2 / 2 / 3 / 4;
   // background-color: burlywood;
-  height: 80vh;
+  height: 75vh;
 }
 
 .bottomMenu {

@@ -50,11 +50,11 @@ const data = [
 const Content = () => {
   return (
     <div className="header_content">
-      <div className="main">
+      <div id="main" className="main">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Perfil profesional</button>
         <h1 className="title_resume">Hola, soy Christian, ingeniero electromecanico y desarrollador web fullstacks</h1>
       </div>
-      <div className="portfolio">
+      <div id="portfolio" className="portfolio">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Portafolio</button>
         <h2 className="title_section">Proyectos realizados</h2>
         <div className="proyects">
@@ -66,7 +66,7 @@ const Content = () => {
           <CardProyect />
         </div>
       </div>
-      <div className="about">
+      <div id="about" className="about">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
         <h2 className="title_section">Soluciones operativas</h2>
         <p className="description">Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.</p>
@@ -84,7 +84,7 @@ const Content = () => {
           <button className="skills">Proactivo</button>
           <button className="skills">Autodidacta</button>
         </div>
-        <div className="experience">
+        <div id="experience" className="experience">
           <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Experiencia</button>
           <h2 className="title_section">Conocimientos</h2>
           <p className="description">Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.</p>

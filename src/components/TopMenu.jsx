@@ -8,10 +8,10 @@ const TopMenu = () => {
   return (
     <div className="container_top_menu">
       <div className="container_btns_nav">
-        <button className="btn">Inicio</button>
-        <button className="btn">Portafilio</button>
-        <button className="btn">Sobre mi</button>
-        <button className="btn">Experiencia</button>
+        <a href="#main" className="btn">Inicio</a>
+        <a href="#portfolio" className="btn">Portafilio</a>
+        <a href="#about" className="btn">Sobre mi</a>
+        <a href="#experience" className="btn">Experiencia</a>
       </div>
       <div className="container_btns_help">
         <button className="btn_lang">ES</button>

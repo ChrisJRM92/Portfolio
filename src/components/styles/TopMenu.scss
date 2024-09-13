@@ -1,8 +1,11 @@
 .container_top_menu{
   display: flex;
   justify-content: space-between;
-  padding-top: 18px;
+  align-items: center;
+  height: 100%;
   padding-right: 60px;
+  // background-color: chocolate;
+  background-color: transparent;
 
   .container_btns_nav{
     display: flex;
