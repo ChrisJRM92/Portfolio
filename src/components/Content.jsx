@@ -114,15 +114,15 @@ const Content = () => {
                 <div className="contact_div">
                   <div className="contact_content">
                     <div className="icon_contact"><FaWhatsapp /></div>
-                    <a  className="text_contact" href="">Enviar mensaje via whatsapp</a>
+                    <a className="text_contact" href="">Enviar mensaje via whatsapp</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><FaPhone /></div>
-                    <a  className="text_contact" href="">+593999796892</a>
+                    <a className="text_contact" href="">+593999796892</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><IoIosMail /></div>
-                    <a  className="text_contact" href="">cjromerom28@gmail.com</a>
+                    <a className="text_contact" href="">cjromerom28@gmail.com</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><FaLocationDot /></div>
@@ -145,11 +145,15 @@ const Content = () => {
                 </div>
                 <button className="btn_submit" type="submit">Enviar mensaje &nbsp;<LuSend /> </button>
               </div>
-
             </form>
-
           </div>
         </div>
+
+        <div className="footer">
+          <hr className="hr_footer" />
+          <p className="footer_text">© 2024. Todos los derechos reservados</p>
+        </div>
+
       </div>
     </div>
   )
