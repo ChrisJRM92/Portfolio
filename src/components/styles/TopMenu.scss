@@ -5,13 +5,16 @@
   height: 100%;
   padding-right: 60px;
   // background-color: chocolate;
-  background-color: transparent;
 
   .container_btns_nav{
     display: flex;
     gap: 10px;
 
     .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
       border-radius: 30px;
       height: 50px;
       padding: 0 25px 0 25px;
@@ -54,6 +57,7 @@
       border-style: none;
       color: #e9e9f1;
       background-color: #0057D0;
+      text-decoration: none;
 
       .icon_message{
         font-size: 20px;

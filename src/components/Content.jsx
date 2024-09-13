@@ -104,7 +104,7 @@ const Content = () => {
             <div className="skill_icon"><FaAws /></div>
           </div>
         </div>
-        <div className="contact">
+        <div id="contact" className="contact">
           <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Contacto</button>
           <h2 className="title_section">Contáctame</h2>
           <div className="container_contact">

@@ -14,9 +14,9 @@ const TopMenu = () => {
         <a href="#experience" className="btn">Experiencia</a>
       </div>
       <div className="container_btns_help">
-        <button className="btn_lang">ES</button>
-        <button className="btn_dark_mode"><IoIosSunny /></button>
-        <button className="btnContact">Contacto &nbsp; <p className="icon_message"><BiMessageDots /></p></button>
+        <a className="btn_lang">ES</a>
+        <a className="btn_dark_mode"><IoIosSunny /></a>
+        <a href="#contact" className="btnContact">Contacto &nbsp; <p className="icon_message"><BiMessageDots /></p></a>
       </div>
     </div>
   )
