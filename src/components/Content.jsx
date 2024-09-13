@@ -16,6 +16,11 @@ import { FaGithub } from "react-icons/fa";
 import { SiRailway } from "react-icons/si";
 import { SiRender } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { LuSend } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
 
 const data = [
   {
@@ -64,7 +69,7 @@ const Content = () => {
       <div className="about">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
         <h2 className="title_section">Soluciones operativas</h2>
-        <p className="description_profile">Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.</p>
+        <p className="description">Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.</p>
         <div className="container_img">
           <div style={{ backgroundImage: "url('/me_1.jpg')" }} className="container_photo"></div>
           <div style={{ backgroundImage: "url('/me_2.jpg')" }} className="container_photo"></div>
@@ -82,7 +87,7 @@ const Content = () => {
         <div className="experience">
           <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Experiencia</button>
           <h2 className="title_section">Conocimientos</h2>
-          <p className="description_profile">Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.</p>
+          <p className="description">Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.</p>
           <div className="container_exp">
             <div className="skill_icon"><FaHtml5 /></div>
             <div className="skill_icon"><FaCss3Alt /></div>
@@ -99,26 +104,53 @@ const Content = () => {
             <div className="skill_icon"><FaAws /></div>
           </div>
         </div>
-        <div className="about">
+        <div className="contact">
           <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Contacto</button>
           <h2 className="title_section">Contáctame</h2>
-          <p className="description_profile">Puedes contactarme en todas mis redes sociales o mediante mensaje directo.</p>
           <div className="container_contact">
             <form className="form" action="">
-              <input type="text" />
-              <input type="email" />
-              <input type="text" />
-              <textarea name="" id=""></textarea>
-              <input type="submit" />
+              <div className="form_card1">
+                <p className="description">Puedes contactarme en todas mis redes sociales o mediante mensaje directo.</p>
+                <div className="contact_div">
+                  <div className="contact_content">
+                    <div className="icon_contact"><FaWhatsapp /></div>
+                    <a  className="text_contact" href="">Enviar mensaje via whatsapp</a>
+                  </div>
+                  <div className="contact_content">
+                    <div className="icon_contact"><FaPhone /></div>
+                    <a  className="text_contact" href="">+593999796892</a>
+                  </div>
+                  <div className="contact_content">
+                    <div className="icon_contact"><IoIosMail /></div>
+                    <a  className="text_contact" href="">cjromerom28@gmail.com</a>
+                  </div>
+                  <div className="contact_content">
+                    <div className="icon_contact"><FaLocationDot /></div>
+                    <a className="text_contact" href="">Loja, Ecuador</a>
+                  </div>
+                </div>
+              </div>
+              <div className="form_card2">
+                <div className="form_elements">
+                  <input className="form_inputs" type="text" placeholder="Nombre" />
+                </div>
+                <div className="form_elements">
+                  <input className="form_inputs" type="email" placeholder="Email" />
+                </div>
+                <div className="form_elements">
+                  <input className="form_inputs" type="text" placeholder="Asunto" />
+                </div>
+                <div className="form_elements">
+                  <textarea className="form_inputs text_area" name="" id="" placeholder="Mensaje..."></textarea>
+                </div>
+                <button className="btn_submit" type="submit">Enviar mensaje &nbsp;<LuSend /> </button>
+              </div>
+
             </form>
-            
+
           </div>
         </div>
-
       </div>
-
-
-
     </div>
   )
 }
