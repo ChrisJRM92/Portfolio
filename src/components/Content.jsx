@@ -24,7 +24,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 
 
-const data = [
+const data_dev = [
   {
     backColor: 'transparent',
     title: 'Mazda 3 workshop manual',
@@ -70,13 +70,18 @@ const Content = () => {
       <div id="portfolio" className="portfolio">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Portafolio</button>
         <h2 className="title_section">Proyectos realizados</h2>
+        <h3 className="sub_title_proyects">Proyectos de desarrollo web</h3>
         <div className="proyects">
-          <CardProyect data={data[0]} />
-          <CardProyect data={data[1]} />
-          <CardProyect data={data[2]} />
-          <CardProyect />
-          <CardProyect />
-          <CardProyect />
+          <CardProyect data={data_dev[0]} />
+          <CardProyect data={data_dev[1]} />
+          <CardProyect data={data_dev[2]} />
+        </div>
+        <br />
+        <h3 className="sub_title_proyects">Proyectos electromecánicos</h3>
+        <div className="proyects">
+          <CardProyect data={data_dev[0]} />
+          <CardProyect data={data_dev[1]} />
+          <CardProyect data={data_dev[2]} />
         </div>
       </div>
       <div id="about" className="about">
