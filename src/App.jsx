@@ -12,9 +12,7 @@ function App() {
         <div class="lateralInfo">
           <LateralContent/>
         </div>
-        <div class="topMenu">
-          <TopMenu/>
-        </div>
+        <div class="topMenu"><TopMenu/></div>
         <div class="content"><Content/></div>
         <div class="bottomMenu"></div>
       </div>

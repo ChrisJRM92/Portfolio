@@ -1,6 +1,124 @@
+.back-to-top{
+	margin: 0 !important;
+	padding: 0 !important;
+	background: #fff;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	color: transparent;
+	clear: both;
+	visibility: hidden;
+	position: fixed;
+	cursor: pointer;
+	display: block;
+	border: none;
+	right: 0px;
+	bottom: 0px;
+	font-size: 0px;
+	outline: 0 !important;
+	z-index: 99;
+	transition: all .3s ease-in-out;
+}
+
+.back-to-top:hover,
+.back-to-top:active,
+.back-to-top:focus{
+	outline: 0 !important;
+}
+
+.back-to-top::before {
+	content: "\f077";
+	font-family: "FontAwesome";
+	display: block;
+	vertical-align: middle;
+	margin: -5px 0 auto;
+}
+
+.back-to-top.show {
+	display: block;
+	background: #FFFFFF;
+	color: #000000;
+	font-size: 25px;
+	right: 25px;
+	bottom: 50px;
+	height: 50px;
+	width: 50px;
+	visibility: visible;
+	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-top.show:active {
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container_arrow_down{
+  padding-top: 40px;
+  width: 100px;
+  height: 60px;
+  // background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.box span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .header_content{
   height: 100%;
   overflow-y: scroll;
+
+  // .back-to-top{
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   font-size: 30px;
+  //   position: fixed;
+  //   bottom: 20px;
+  //   right: 20px;
+  //   background-color: #e9e9f1;
+  //   height: 50px;
+  //   width: 50px;
+  //   border-radius: 30px;
+  
+  // }
+
 
   // ----------Header------------
   .main{
@@ -8,6 +126,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // background-color: darkviolet;
   
     .title_resume{
       color: #e9e9f1;
