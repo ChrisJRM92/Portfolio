@@ -31,21 +31,30 @@ const data_dev = [
     title: 'Mazda 3 workshop manual',
     description: 'Adaptacion de manual de taller.',
     img: '/mokmazda.png',
-    btn_color: "#111111"
+    btn_color: "#111111",
+    display_star: "block",
+    github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
+    deploy: "https://www.mazda3bk.info/"
   },
   {
     backColor: 'transparent',
     title: 'Pokedex virtual',
     description: 'Consumo de información PokeAPI',
     img: '/mokpokemon.png',
-    btn_color: "#111111"
+    btn_color: "#111111",
+    display_star: "none",
+    github: "https://github.com/ChrisJRM92/pokedex_api",
+    deploy: "https://pokedex-api-six-weld.vercel.app/"
   },
   {
     backColor: 'transparent',
     title: 'Weather info',
     description: 'Consumo datos Open Weather API',
     img: '/mokweather.png',
-    btn_color: "#111111"
+    btn_color: "#111111",
+    display_star: "none",
+    github: "https://github.com/ChrisJRM92/weather_info",
+    deploy: "https://weather-info-omega.vercel.app/p"
   },
 ]
 
@@ -95,13 +104,13 @@ const Content = () => {
           <CardProyect data={data_dev[1]} />
           <CardProyect data={data_dev[2]} />
         </div>
-        <br />
+        {/* <br />
         <h3 className="sub_title_proyects">Proyectos de mantenimiento electromecánico</h3>
         <div className="proyects">
           <CardProyect data={data_ing[0]} />
           <CardProyect data={data_ing[1]} />
           <CardProyect data={data_ing[2]} />
-        </div>
+        </div> */}
       </div>
       <div id="about" className="about">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>

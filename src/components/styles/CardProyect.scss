@@ -60,8 +60,12 @@
     }
 
     .butom_proyect {
+      height: 50px;
       display: flex;
       gap: 10px;
+      align-items: center;
+      // justify-content: center;
+      // background-color: aqua;
 
       .btn_proyects {
         display: flex;
@@ -69,12 +73,31 @@
         align-items: center;
         border-style: none;
         border-radius: 30px;
-        // background-color: #e9e9f1;
-        padding: 8px 20px;
-        margin-top: 15px;
+        background-color: #e9e9f1;
+        padding: 0px 15px;
+        height: 30px;
+        // margin-top: 15px;
         font-weight: 600;
         cursor: pointer;
+        color: rgb(255, 63, 63);
+        text-decoration: none;
+
+        .live{
+          color: rgb(255, 63, 63);
+          font-size: 10px;
+          // background-color: aqua;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .star{
+        // background-color: blueviolet;
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
     }
+    
   }
 }
