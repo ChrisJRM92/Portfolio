@@ -1,5 +1,6 @@
 .header_content {
   height: 100%;
+  // width: 100%;
   overflow-y: scroll;
 
   // .back-to-top{
@@ -21,6 +22,7 @@
   // ----------Header------------
   .main {
     height: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,59 +285,66 @@
   .header {
     padding-left: 20px;
 
-
     .title_resume {
       color: #e9e9f1;
       font-size: 35px;
       font-weight: 400;
     }
   }
-  .header_content{
+
+  .header_content {
     overflow: hidden;
+
+    .main {
+      padding-top: 20px;
+
+      .title_resume {
+        font-size: 43px;
+      }
+    }
 
     .contact {
       // width: 100%;
-  
+
       .container_contact {
         // width: 100%;
-  
+
         .form {
           display: flex;
           gap: 20px;
           flex-direction: column;
           // width: 100%;
-  
-          .form_card1{
+
+          .form_card1 {
             width: 100%;
             // background-color: #0956d2;
           }
-  
-          .form_card2{
+
+          .form_card2 {
             width: 100%;
           }
         }
       }
     }
   }
-  
 }
 
 
-  // -------Styles scrollbar--------
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+// -------Styles scrollbar--------
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #464957;
-    border-radius: 6px;
-  }
+::-webkit-scrollbar-thumb {
+  background: #464957;
+  border-radius: 6px;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0956d2;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #0956d2;
+}
 
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

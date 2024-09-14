@@ -11,7 +11,7 @@ const LateralContent = () => {
     <div className='containerCard'>
       <div className='header'>
         <div className='iconProfile'></div>
-        <h1 className='name'>Christian Romero</h1>
+        <h1 id="home_mobile" className='name'>Christian Romero</h1>
       </div>
       <div className='photo_profile'></div>
       <p className='profile_description'>Perfil profesional:</p>
