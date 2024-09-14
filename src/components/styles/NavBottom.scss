@@ -1,0 +1,30 @@
+.container_nav_menu{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+
+  
+
+  .nav_icon_bottom{
+    width: auto;
+    // height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #e9e9f1;
+    text-decoration: none;
+
+    .icon_menu_bottom{
+      font-size: 18px;
+      color: #e9e9f1;
+    }
+
+    .style_menu_hamburger{
+      font-size: 30px;
+    }
+
+  }
+}
