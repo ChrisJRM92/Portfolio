@@ -12,6 +12,7 @@
   grid-area: 1 / 1 / 4 / 2;
   // background-color: aquamarine;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -27,6 +28,7 @@
   grid-area: 2 / 2 / 3 / 4;
   // background-color: burlywood;
   height: 75vh;
+  // width: auto;
 }
 
 .bottomMenu {
@@ -40,21 +42,30 @@
   .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .lateralInfo {
     grid-area: 1 / 1 / 2 / 2;
-    align-items: flex-start;
+    
+
+    .arrow_hide {
+      visibility: visible;
+      display: block;
+      // background-color: aqua;
+      height: 100px;
+    }
   }
-  
+
   .topMenu {
     display: none;
   }
-  
+
   .content {
     grid-area: 2 / 1 / 3 / 2;
+    height: 100%;
   }
-  
+
   .bottomMenu {
     // background-color: brown;
     position: fixed;
@@ -63,5 +74,17 @@
     width: 100%;
     height: 50px;
     z-index: 1;
+  }
+}
+
+@media (min-width: 650px) {
+  .lateralInfo {
+
+    .arrow_hide {
+      padding-bottom: 50px;
+      visibility: hidden;
+      display: none;
+      background-color: aqua;
+    }
   }
 }

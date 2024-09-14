@@ -22,6 +22,7 @@ import { FaPhone } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
+import ArrowDown from "./ArrowDown";
 
 
 const data_dev = [
@@ -82,15 +83,7 @@ const Content = () => {
       <div id="main" className="main">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Perfil profesional</button>
         <h1 className="title_resume">Hola, soy Christian, ingeniero electromecanico y desarrollador web fullstacks</h1>
-        <div class="container_arrow_down">
-          <a href="#portfolio" class="demo">
-            <div class="box">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </a>
-        </div>
+        <ArrowDown/>
       </div>
 
       <div id="portfolio" className="portfolio">
