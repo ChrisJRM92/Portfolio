@@ -160,19 +160,19 @@ const Content = () => {
                 <div className="contact_div">
                   <div className="contact_content">
                     <div className="icon_contact"><FaWhatsapp /></div>
-                    <a className="text_contact" href="">Enviar mensaje via whatsapp</a>
+                    <a className="text_contact" href="https://wa.me/+593999796892?text=Hola Christian, vi tu portafolio, ¿podríamos planificar una reunión?">Enviar mensaje via whatsapp</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><FaPhone /></div>
-                    <a className="text_contact" href="">+593999796892</a>
+                    <a className="text_contact" href="tel:+593999796892">(+593)999796892</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><IoIosMail /></div>
-                    <a className="text_contact" href="">cjromerom28@gmail.com</a>
+                    <a className="text_contact" href="mailto:cjromerom28@gmail.com">cjromerom28@gmail.com</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><FaLocationDot /></div>
-                    <a className="text_contact" href="">Loja, Ecuador</a>
+                    <a className="text_contact">Loja, Ecuador</a>
                   </div>
                 </div>
               </div>
