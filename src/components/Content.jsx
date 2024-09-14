@@ -46,7 +46,33 @@ const data_dev = [
     img: '/mokweather.png',
     btn_color: "#111111"
   },
+]
 
+const data_ing = [
+  {
+    backColor: 'transparent',
+    title: 'Apoyo mantenimiento',
+    description: 'Apoyo en mantenimiento de deldas de media tensión y tablero de instrumentación',
+    img: '/mant1.png',
+    btn_color: "#111111",
+    display: "none"
+  },
+  {
+    backColor: 'transparent',
+    title: 'Electrificación',
+    description: 'Electrificación de nave industrial de taller automotriz KIA',
+    img: '/mant2.png',
+    btn_color: "#111111",
+    display: "none"
+  },
+  {
+    backColor: 'transparent',
+    title: 'Op. y mantenimiento',
+    description: 'Operación y mantenimiento en planta de produción minera',
+    img: '/mant3.png',
+    btn_color: "#111111",
+    display: "none"
+  },
 ]
 
 const Content = () => {
@@ -77,11 +103,11 @@ const Content = () => {
           <CardProyect data={data_dev[2]} />
         </div>
         <br />
-        <h3 className="sub_title_proyects">Proyectos electromecánicos</h3>
+        <h3 className="sub_title_proyects">Proyectos de mantenimiento electromecánico</h3>
         <div className="proyects">
-          <CardProyect data={data_dev[0]} />
-          <CardProyect data={data_dev[1]} />
-          <CardProyect data={data_dev[2]} />
+          <CardProyect data={data_ing[0]} />
+          <CardProyect data={data_ing[1]} />
+          <CardProyect data={data_ing[2]} />
         </div>
       </div>
       <div id="about" className="about">
