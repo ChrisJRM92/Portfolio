@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "src/**/*",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/locales/(.*)",
+      "dest": "/public/locales/$1"
+    }
+  ]
+}
