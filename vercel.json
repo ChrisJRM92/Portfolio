@@ -1,8 +1,0 @@
-{
-  "routes": [
-    {
-      "src": "/locales/(.*)",
-      "dest": "/public/locales/$1"
-    }
-  ]
-}
