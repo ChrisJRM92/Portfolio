@@ -4,7 +4,7 @@ import Backend from 'i18next-http-backend';
 
 i18n.use(Backend).use(initReactI18next).init({
   backend: {
-    loadPath: '../public/locales/{{lng}}.json', // Ruta desde la carpeta public
+    loadPath: '/locales/{{lng}}.json', // Ruta desde la carpeta public
   },
   
   lng: 'es', // Idioma por defecto
