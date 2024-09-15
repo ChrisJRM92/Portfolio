@@ -15,9 +15,9 @@ const TopMenu = () => {
     setChecked(!checked);
   };
 
+  console.log(translations)
   useEffect(() => {
     const selectedLanguage = checked ? 'en' : 'es';
-
     axios.get(`../../src/assets/lang/${selectedLanguage}.json`)
       .then(response => {
         setTranslations(response.data);
@@ -31,7 +31,7 @@ const TopMenu = () => {
   return (
     <div className="container_top_menu">
       <div className="container_btns_nav">
-        <a href="#main" id="btn_home" className="btn">Inicio</a>
+        <a href="#main" id="btn_home" className="btn">{translations?.btn_home}</a>
         <a href="#portfolio" id="btn_portfolio" className="btn">Portafilio</a>
         <a href="#about" id="btn_about" className="btn">Sobre mi</a>
         <a href="#experience" id="btn_experience" className="btn">Experiencia</a>
