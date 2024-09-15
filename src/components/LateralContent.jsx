@@ -14,9 +14,9 @@ const LateralContent = () => {
         <h1 id="home_mobile" className='name'>Christian Romero</h1>
       </div>
       <div className='photo_profile'></div>
-      <p className='profile_description'>Perfil profesional:</p>
-      <h1 className='profession'>Ing. Electromecánico</h1>
-      <h1 className='profession'>Fullstack developer</h1>
+      <p className='profile_description' id="profession">Perfil profesional:</p>
+      <h1 className='profession' id="carrer_1">Ing. Electromecánico</h1>
+      <h1 className='profession' id="carrer_2">Desarrollador Fullstack</h1>
       <div className='social_networks'>
         <a href="https://github.com/ChrisJRM92" target="_blank" className='social'><FaGithub /></a>
         <a href="https://www.linkedin.com/in/chrisjrm/" target="_blank" className='social'><FaLinkedin /></a>
@@ -25,7 +25,7 @@ const LateralContent = () => {
         <a href="https://www.instagram.com/cris_s6662024/" target="_blank" className='social'><FaInstagram /></a>
       </div>
       <div className="btn">
-        <a href="#contact" className="btn_contact">Contáctame</a>
+        <a href="#contact" id="contact" className="btn_contact">Contáctame</a>
       </div>
     </div>
   )
