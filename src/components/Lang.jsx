@@ -1,14 +1,8 @@
-import { useState } from 'react';
 import { IoLanguage } from "react-icons/io5";
 import './styles/Lang.scss'
+import { useState } from "react";
 
-
-const Lang = () => {
-    const [checked, setChecked] = useState(false);
-
-    const toggleCheckbox = () => {
-      setChecked(!checked);
-    };
+const Lang = ({ checked, toggleCheckbox }) => {
 
   return (
     <div>
