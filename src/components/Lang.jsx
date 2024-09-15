@@ -12,7 +12,7 @@ const Lang = () => {
 
   return (
     <div>
-      <button className='checkbox_btn' onClick={toggleCheckbox} >{checked ? 'ES' : 'EN'} <IoLanguage /></button>
+      <button className='checkbox_btn' onClick={toggleCheckbox} >{checked ? 'ES' : 'EN'} &nbsp; <IoLanguage /></button>
       <input className='ckeckbox_lang' id="chekbox_lang" type="checkbox" checked={checked} onChange={toggleCheckbox} />
     </div>
   )

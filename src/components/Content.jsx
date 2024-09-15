@@ -88,7 +88,7 @@ const data_ing = [
 const Content = () => {
   return (
     <div className="header_content">
-      <a class="back-to-top" type="button"><IoIosArrowUp /></a>
+      <a className="back-to-top" type="button"><IoIosArrowUp /></a>
       <div id="main" className="main">
         <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Perfil profesional</button>
         <h1 className="title_resume">Hola, soy Christian, ingeniero electromecanico y desarrollador web fullstacks</h1>

@@ -6,4 +6,12 @@
   border-color: #778899;
   color: #778899;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.ckeckbox_lang{
+  display: none;
 }

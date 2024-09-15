@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import './styles/CardProyect.scss'
 
 const CardProyect = ({data}) => {
-  console.log(data)
+  // console.log(data)
   return (
     <div className="card_proyect">
       <div className="back_color" style={{ backgroundColor: `${data?.backColor}` }}></div>

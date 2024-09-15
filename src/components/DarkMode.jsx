@@ -11,8 +11,8 @@ const DarkMode = () => {
 
   return (
     <div>
-            <button className='checkbox_btn' onClick={toggleCheckbox} >{checked ? <FaMoon /> :  <IoMdSunny />}</button>
-            <input className='ckeckbox_lang' id="chekbox_lang" type="checkbox" checked={checked} onChange={toggleCheckbox} />
+      <button className='checkbox_btn' onClick={toggleCheckbox} >{checked ? <FaMoon /> : <IoMdSunny />}</button>
+      <input className='ckeckbox_lang' id="chekbox_lang" type="checkbox" checked={checked} onChange={toggleCheckbox} />
     </div>
   )
 }

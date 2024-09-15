@@ -11,16 +11,16 @@ function App() {
   return (
     <>
       <div className='container'>
-        <div class="lateralInfo">
+        <div className="lateralInfo">
           <LateralContent />
           <div className='arrow_hide'>
             <ArrowDown />
           </div>
 
         </div>
-        <div class="topMenu"><TopMenu /></div>
-        <div class="content"><Content /></div>
-        <div class="bottomMenu"> <NavBottom/> </div>
+        <div className="topMenu"><TopMenu /></div>
+        <div className="content"><Content /></div>
+        <div className="bottomMenu"> <NavBottom/> </div>
       </div>
     </>
   )
