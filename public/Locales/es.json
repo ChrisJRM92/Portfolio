@@ -3,12 +3,69 @@
     "carrer_1": "Ing. Electromecánico",
     "carrer_2": "Desarrollador Fullstack",
     "contact": "Contáctame",
-
     "btn_home": "Inicio",
-    "btn_portfolio": "Portafilio",
+    "btn_portfolio": "Portafolio",
     "btn_about": "Sobre mi",
     "btn_experience": "Experiencia",
-    "btn_contact": "Contacto"
-
-    
+    "btn_contact": "Contacto",
+    "btn_profile": "Perfil profesional",
+    "main_description": "Hola, soy Christian, ingeniero electromecanico y desarrollador web fullstacks",
+    "btn_portfolio_content": "Portafolio",
+    "sub_title_1": "Proyectos realizados",
+    "title_description_1": "Proyectos Frontend",
+    "title_description_2": "Proyectos Backend",
+    "btn_about_section": "",
+    "about_title": "Soluciones operativas",
+    "about_description": "Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.",
+    "skills_about": "Habilidades Blandas",
+    "skill_1": "Responsable",
+    "skill_2": "Trabajo en equipo",
+    "skill_3": "Creativo",
+    "skill_4": "Puntual",
+    "skill_5": "Proactivo",
+    "skill_6": "Autodidacta",
+    "btn_knowledge": "Experiencia",
+    "experience_title": "Conocimientos",
+    "experience_description": "Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.",
+    "btn_contact_section": "Contacto",
+    "contact_title_section": "Contáctame",
+    "contact_section_description": "Puedes contactarme en todas mis redes sociales o mediante mensaje directo.",
+    "send_message_wp": "Enviar mensaje via whatsapp",
+    "placeholder_name": "Nombre",
+    "btn_send_message": "Enviar mensaje",
+    "footer_copyright": "Todos los derechos reservados",
+    "projects_frontend": {
+        "mazda": {
+            "title": "Manual de taller Mazda 3",
+            "description": "Adaptación del manual de taller."
+        },
+        "pokedex": {
+            "title": "Pokedex virtual",
+            "description": "Consumo de información PokeAPI."
+        },
+        "weather": {
+            "title": "Información del clima",
+            "description": "Consumo Open Weather API."
+        }
+    },
+    "projects_backend": {
+        "mazda": {
+            "title": "Manual de taller Mazda 3",
+            "description": "Adaptación del manual de taller."
+        },
+        "pokedex": {
+            "title": "Pokedex virtual",
+            "description": "Consumo de información PokeAPI."
+        },
+        "weather": {
+            "title": "Información del clima",
+            "description": "Consumo Open Weather API."
+        }
+    },
+    "placeholders": {
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Asunto",
+        "text_area": "Mensaje..."
+    }
 }

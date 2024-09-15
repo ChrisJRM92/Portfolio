@@ -1,12 +1,71 @@
 {
-    "profession": "Perfil profesional:",
-    "carrer_1": "Ing. Electromecánico",
-    "carrer_2": "Desarrollador Fullstack",
-    "contact": "Contáctame",
-
+    "profession": "Professional Profile:",
+    "carrer_1": "Electromechanical Eng",
+    "carrer_2": "Fullstack Developer",
+    "contact": "Contact Me",
     "btn_home": "Home",
     "btn_portfolio": "Portfolio",
-    "btn_about": "About me",
+    "btn_about": "About Me",
     "btn_experience": "Experience",
-    "btn_contact": "Contact"
+    "btn_contact": "Contact",
+    "btn_profile": "Professional Profile",
+    "main_description": "Hi, I'm Christian, an electromechanical engineer and fullstack web developer.",
+    "btn_portfolio_content": "Portfolio",
+    "sub_title_1": "Completed Projects",
+    "title_description_1": "Frontend Projects",
+    "title_description_2": "Backend Projects",
+    "btn_about_section": "",
+    "about_title": "Operational Solutions",
+    "about_description": "Committed to the functionality and performance of systems, I leverage the knowledge gained throughout my career to provide optimal solutions. I enjoy spending time with family, traveling, and exploring new places. I also excel in fostering strong interpersonal relationships to ensure the best team performance.",
+    "skills_about": "Soft Skills",
+    "skill_1": "Responsible",
+    "skill_2": "Team Player",
+    "skill_3": "Creative",
+    "skill_4": "Punctual",
+    "skill_5": "Proactive",
+    "skill_6": "Self-taught",
+    "btn_knowledge": "Experience",
+    "experience_title": "Expertise",
+    "experience_description": "I have extensive experience and expertise in the leading languages and production tools.",
+    "btn_contact_section": "Contact",
+    "contact_title_section": "Get in Touch",
+    "contact_section_description": "You can reach me through all my social networks or send a direct message.",
+    "send_message_wp": "Send a message via WhatsApp",
+    "placeholder_name": "Name",
+    "btn_send_message": "Send Message",
+    "footer_copyright": "All rights reserved",
+    "projects_frontend": {
+        "mazda": {
+            "title": "Mazda 3 Workshop Manual",
+            "description": "Adaptation workshop manual."
+        },
+        "pokedex": {
+            "title": "Virtual Pokedex",
+            "description": "Consumption PokeAPI information."
+        },
+        "weather": {
+            "title": "Weather Info",
+            "description": "Open Weather API consumption."
+        }
+    },
+    "projects_backend": {
+        "mazda": {
+            "title": "Mazda 3 Workshop Manual",
+            "description": "Adaptation workshop manual."
+        },
+        "pokedex": {
+            "title": "Virtual Pokedex",
+            "description": "Consumption PokeAPI information."
+        },
+        "weather": {
+            "title": "Weather Info",
+            "description": "Open Weather API consumption."
+        }
+    },
+    "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "text_area": "Message..."
+    }
 }

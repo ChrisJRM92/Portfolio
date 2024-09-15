@@ -7,22 +7,9 @@ import './styles/App.scss'
 
 
 // -------i18next--------
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import './i18n';
-import Lang from './components/Lang'
 
 function App() {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng); // Cambia el idioma
-  };
-
-  const [checked, setChecked] = useState(false);
-  const toggleCheckbox = () => {
-    setChecked(!checked);
-  };
-  
 
   return (
     <>

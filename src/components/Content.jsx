@@ -23,117 +23,125 @@ import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import ArrowDown from "./ArrowDown";
-
-
-const data_dev = [
-  {
-    backColor: 'transparent',
-    title: 'Mazda 3 workshop manual',
-    description: 'Adaptacion de manual de taller.',
-    img: '/mokmazda.png',
-    btn_color: "#111111",
-    display_star: "block",
-    github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
-    deploy: "https://www.mazda3bk.info/"
-  },
-  {
-    backColor: 'transparent',
-    title: 'Pokedex virtual',
-    description: 'Consumo de información PokeAPI',
-    img: '/mokpokemon.png',
-    btn_color: "#111111",
-    display_star: "none",
-    github: "https://github.com/ChrisJRM92/pokedex_api",
-    deploy: "https://pokedex-api-six-weld.vercel.app/"
-  },
-  {
-    backColor: 'transparent',
-    title: 'Weather info',
-    description: 'Consumo datos Open Weather API',
-    img: '/mokweather.png',
-    btn_color: "#111111",
-    display_star: "none",
-    github: "https://github.com/ChrisJRM92/weather_info",
-    deploy: "https://weather-info-omega.vercel.app/"
-  },
-]
-
-const data_ing = [
-  {
-    backColor: 'transparent',
-    title: 'Apoyo mantenimiento',
-    description: 'Apoyo en mantenimiento de deldas de media tensión y tablero de instrumentación',
-    img: '/mant1.png',
-    btn_color: "#111111",
-    display: "none"
-  },
-  {
-    backColor: 'transparent',
-    title: 'Electrificación',
-    description: 'Electrificación de nave industrial de taller automotriz KIA',
-    img: '/mant2.png',
-    btn_color: "#111111",
-    display: "none"
-  },
-  {
-    backColor: 'transparent',
-    title: 'Op. y mantenimiento',
-    description: 'Operación y mantenimiento en planta de produción minera',
-    img: '/mant3.png',
-    btn_color: "#111111",
-    display: "none"
-  },
-]
+import { useTranslation } from 'react-i18next';
 
 const Content = () => {
+  const { t } = useTranslation();
+
+  const data_frontend = [
+    {
+      backColor: 'transparent',
+      title: t('projects_frontend.mazda.title'),
+      description: t('projects_frontend.mazda.description'),
+      img: '/mokmazda.png',
+      btn_color: "#111111",
+      display_star: "block",
+      github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
+      deploy: "https://www.mazda3bk.info/"
+    },
+    {
+      backColor: 'transparent',
+      title: t('projects_frontend.pokedex.title'),
+      description: t('projects_frontend.pokedex.description'),
+      img: '/mokpokemon.png',
+      btn_color: "#111111",
+      display_star: "none",
+      github: "https://github.com/ChrisJRM92/pokedex_api",
+      deploy: "https://pokedex-api-six-weld.vercel.app/"
+    },
+    {
+      backColor: 'transparent',
+      title: t('projects_frontend.weather.title'),
+      description: t('projects_frontend.weather.description'),
+      img: '/mokweather.png',
+      btn_color: "#111111",
+      display_star: "none",
+      github: "https://github.com/ChrisJRM92/weather_info",
+      deploy: "https://weather-info-omega.vercel.app/"
+    },
+  ]
+  
+  const data_backend = [
+    {
+      backColor: 'transparent',
+      title: t('projects_backend.mazda.title'),
+      description: t('projects_backend.mazda.description'),
+      img: '/mokmazda.png',
+      btn_color: "#111111",
+      display_star: "block",
+      github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
+      deploy: "https://www.mazda3bk.info/"
+    },
+    {
+      backColor: 'transparent',
+      title: t('projects_backend.pokedex.title'),
+      description: t('projects_backend.pokedex.description'),
+      img: '/mokpokemon.png',
+      btn_color: "#111111",
+      display_star: "none",
+      github: "https://github.com/ChrisJRM92/pokedex_api",
+      deploy: "https://pokedex-api-six-weld.vercel.app/"
+    },
+    {
+      backColor: 'transparent',
+      title: t('projects_backend.weather.title'),
+      description: t('projects_backend.weather.description'),
+      img: '/mokweather.png',
+      btn_color: "#111111",
+      display_star: "none",
+      github: "https://github.com/ChrisJRM92/weather_info",
+      deploy: "https://weather-info-omega.vercel.app/"
+    },
+  ]
+
   return (
     <div className="header_content">
       <a className="back-to-top" type="button"><IoIosArrowUp /></a>
       <div id="main" className="main">
-        <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Perfil profesional</button>
-        <h1 className="title_resume">Hola, soy Christian, ingeniero electromecanico y desarrollador web fullstacks</h1>
-        <ArrowDown/>
+        <button id="btn_profile" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_profile')}</button>
+        <h1 id="main_description" className="title_resume">{t('main_description')}</h1>
+        <ArrowDown />
       </div>
 
       <div id="portfolio" className="portfolio">
-        <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Portafolio</button>
-        <h2 className="title_section">Proyectos realizados</h2>
-        <h3 className="sub_title_proyects">Proyectos de desarrollo web</h3>
+        <button id="btn_portfolio_content" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_portfolio_content')}</button>
+        <h2 id="sub_title_1" className="title_section">{t('sub_title_1')}</h2>
+        <h3 id="title_description_1" className="sub_title_proyects">{t('title_description_1')}</h3>
         <div className="proyects">
-          <CardProyect data={data_dev[0]} />
-          <CardProyect data={data_dev[1]} />
-          <CardProyect data={data_dev[2]} />
+          <CardProyect data={data_frontend[0]} />
+          <CardProyect data={data_frontend[1]} />
+          <CardProyect data={data_frontend[2]} />
         </div>
-        {/* <br />
-        <h3 className="sub_title_proyects">Proyectos de mantenimiento electromecánico</h3>
+        <br />
+        <h3 id="title_description_2" className="sub_title_proyects">{t('title_description_2')}</h3>
         <div className="proyects">
-          <CardProyect data={data_ing[0]} />
-          <CardProyect data={data_ing[1]} />
-          <CardProyect data={data_ing[2]} />
-        </div> */}
+          <CardProyect data={data_backend[0]} />
+          <CardProyect data={data_backend[1]} />
+          <CardProyect data={data_backend[2]} />
+        </div>
       </div>
       <div id="about" className="about">
-        <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Sobre mi</button>
-        <h2 className="title_section">Soluciones operativas</h2>
-        <p className="description">Comprometido con la operatividad y funcionabilidad de sistemas, complemento mis conocimientos adquiridos a lo largo de mi carrera para brindar soluciones óptimas. Me gusta compartir en familia, me gusta viajar y conocer nuevos lugares, también manejo excelentes relaciones interpersonales para garantizar el mejor desempeño entre todos.</p>
+        <button id="btn_about_section" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_about_section')}</button>
+        <h2 id="about_title" className="title_section">{t('about_title')}</h2>
+        <p id="about_description" className="description">{t('about_description')}</p>
         <div className="container_img">
           <div style={{ backgroundImage: "url('/me_1.jpg')" }} className="container_photo"></div>
           <div style={{ backgroundImage: "url('/me_2.jpg')" }} className="container_photo"></div>
           <div style={{ backgroundImage: "url('/me_3.jpg')" }} className="container_photo"></div>
         </div>
-        <h2 className="title_section_skills">Habilidades Blandas</h2>
+        <h2 id="skills_about" className="title_section_skills">{t('skills_about')}</h2>
         <div className="container_skills">
-          <button className="skills">Responsable</button>
-          <button className="skills">Trabajo en equipo</button>
-          <button className="skills">Creativo</button>
-          <button className="skills">Puntual</button>
-          <button className="skills">Proactivo</button>
-          <button className="skills">Autodidacta</button>
+          <button id="skill_1" className="skills">{t('skill_1')}</button>
+          <button id="skill_2" className="skills">{t('skill_2')}</button>
+          <button id="skill_3" className="skills">{t('skill_3')}</button>
+          <button id="skill_4" className="skills">{t('skill_4')}</button>
+          <button id="skill_5" className="skills">{t('skill_5')}</button>
+          <button id="skill_6" className="skills">{t('skill_6')}</button>
         </div>
         <div id="experience" className="experience">
-          <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Experiencia</button>
-          <h2 className="title_section">Conocimientos</h2>
-          <p className="description">Cuento con ámplia experiencia y conocimientos en los principales lenguajes y herramientas de producción.</p>
+          <button id="btn_knowledge" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_knowledge')}</button>
+          <h2 id="experience_title" className="title_section">{t('experience_title')}</h2>
+          <p id="experience_description" className="description">{t('experience_description')}</p>
           <div className="container_exp">
             <div className="skill_icon"><FaHtml5 /></div>
             <div className="skill_icon"><FaCss3Alt /></div>
@@ -150,17 +158,17 @@ const Content = () => {
             <div className="skill_icon"><FaAws /></div>
           </div>
         </div>
-        <div id="contact" className="contact">
-          <button className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;Contacto</button>
-          <h2 className="title_section">Contáctame</h2>
+        <div id="contact_main_content" className="contact">
+          <button id="btn_contact_section" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_contact_section')}</button>
+          <h2 id="contact_title_section" className="title_section">{t('contact_title_section')}</h2>
           <div className="container_contact">
             <form className="form" action="">
               <div className="form_card1">
-                <p className="description">Puedes contactarme en todas mis redes sociales o mediante mensaje directo.</p>
+                <p id="contact_section_description" className="description">{t('contact_section_description')}</p>
                 <div className="contact_div">
                   <div className="contact_content">
                     <div className="icon_contact"><FaWhatsapp /></div>
-                    <a className="text_contact" href="https://wa.me/+593999796892?text=Hola Christian, vi tu portafolio, ¿podríamos planificar una reunión?">Enviar mensaje via whatsapp</a>
+                    <a id="send_message_wp" className="text_contact" href="https://wa.me/+593999796892?text=Hola Christian, vi tu portafolio, ¿podríamos planificar una reunión?">{t('send_message_wp')}</a>
                   </div>
                   <div className="contact_content">
                     <div className="icon_contact"><FaPhone /></div>
@@ -178,18 +186,18 @@ const Content = () => {
               </div>
               <div className="form_card2">
                 <div className="form_elements">
-                  <input className="form_inputs" type="text" placeholder="Nombre" />
+                  <input className="form_inputs" type="text" placeholder={t('placeholders.name')} />
                 </div>
                 <div className="form_elements">
-                  <input className="form_inputs" type="email" placeholder="Email" />
+                  <input className="form_inputs" type="email" placeholder={t('placeholders.email')} />
                 </div>
                 <div className="form_elements">
-                  <input className="form_inputs" type="text" placeholder="Asunto" />
+                  <input className="form_inputs" type="text" placeholder={t('placeholders.subject')} />
                 </div>
                 <div className="form_elements">
-                  <textarea className="form_inputs text_area" name="" id="" placeholder="Mensaje..."></textarea>
+                  <textarea className="form_inputs text_area" name="" id="" placeholder={t('placeholders.text_area')}></textarea>
                 </div>
-                <button className="btn_submit" type="submit">Enviar mensaje &nbsp;<LuSend /> </button>
+                <button id="btn_send_message" className="btn_submit" type="submit">{t('btn_send_message')} &nbsp;<LuSend /> </button>
               </div>
             </form>
           </div>
@@ -197,7 +205,8 @@ const Content = () => {
 
         <div className="footer">
           <hr className="hr_footer" />
-          <p className="footer_text">© 2024. Todos los derechos reservados</p>
+          <p id="footer_year_copyright" className="footer_text">© 2024.</p>
+          <p id="footer_copyright" className="footer_text">&nbsp;{t('footer_copyright')}</p>
         </div>
 
       </div>
