@@ -1,8 +1,17 @@
 import { IoLanguage } from "react-icons/io5";
 import './styles/Lang.scss'
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
-const Lang = ({ checked, toggleCheckbox }) => {
+const Lang = () => {
+  const [checked, setChecked] = useState(false);
+  const { i18n } = useTranslation();
+
+  const toggleCheckbox = () => {
+    setChecked(!checked);
+    const newLanguage = checked ? 'es' : 'en';
+    i18n.changeLanguage(newLanguage)
+  };
 
   return (
     <div>
