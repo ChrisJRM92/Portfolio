@@ -54,7 +54,7 @@ const data_dev = [
     btn_color: "#111111",
     display_star: "none",
     github: "https://github.com/ChrisJRM92/weather_info",
-    deploy: "https://weather-info-omega.vercel.app/p"
+    deploy: "https://weather-info-omega.vercel.app/"
   },
 ]
 

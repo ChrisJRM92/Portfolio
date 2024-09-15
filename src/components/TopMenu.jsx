@@ -1,9 +1,10 @@
 
-import { IoIosSunny } from "react-icons/io";
+
 import { BiMessageDots } from "react-icons/bi";
 
 import './styles/TopMenu.scss'
 import Lang from "./Lang";
+import DarkMode from "./DarkMode";
 
 const TopMenu = () => {
   return (
@@ -16,7 +17,7 @@ const TopMenu = () => {
       </div>
       <div className="container_btns_help">
         <a className="btn_lang"><Lang/></a>
-        <a className="btn_dark_mode"><IoIosSunny /></a>
+        <a className="btn_dark_mode"><DarkMode/></a>
         <a href="#contact" className="btnContact">Contacto &nbsp; <p className="icon_message"><BiMessageDots /></p></a>
       </div>
     </div>
