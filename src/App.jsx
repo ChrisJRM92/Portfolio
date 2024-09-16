@@ -1,10 +1,9 @@
 import ArrowDown from './components/ArrowDown'
 import Content from './components/Content'
 import LateralContent from './components/LateralContent'
-import NavBottom from './components/NavBottom'
+import BottomMenu from './components/BottomMenu'
 import TopMenu from './components/TopMenu'
 import './styles/App.scss'
-
 
 // -------i18next--------
 import './i18n';
@@ -19,7 +18,7 @@ function App() {
         </div>
         <div className="topMenu"><TopMenu /></div>
         <div className="content"><Content /></div>
-        <div className="bottomMenu"> <NavBottom /> </div>
+        <div className="bottomMenu"> <BottomMenu /> </div>
       </div>
     </>
   )

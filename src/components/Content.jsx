@@ -92,7 +92,7 @@ const Content = () => {
 
   return (
     <div className="header_content">
-      <a className="back-to-top" type="button"><IoIosArrowUp /></a>
+      {/* <a className="back-to-top" type="button"><IoIosArrowUp /></a> */}
       <div id="main" className="main">
         <button id="btn_profile" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_profile')}</button>
         <h1 id="main_description" className="title_resume">{t('main_description')}</h1>
@@ -135,7 +135,7 @@ const Content = () => {
           <button id="skill_6" className="skills">{t('skill_6')}</button>
         </div>
         <div id="experience" className="experience">
-          <button id="btn_knowledge" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_knowledge')}</button>
+          <button id="btn_knowledge" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>{t('btn_knowledge')}</button>
           <h2 id="experience_title" className="title_section">{t('experience_title')}</h2>
           <p id="experience_description" className="description">{t('experience_description')}</p>
           <div className="container_exp">
