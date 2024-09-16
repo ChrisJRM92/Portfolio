@@ -33,6 +33,7 @@
     "send_message_wp": "Enviar mensaje via whatsapp",
     "placeholder_name": "Nombre",
     "btn_send_message": "Enviar mensaje",
+    "message_sent":"Mensaje enviado!",
     "footer_copyright": "Todos los derechos reservados",
     "projects_frontend": {
         "mazda": {

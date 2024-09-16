@@ -195,15 +195,31 @@
             }
           }
 
-          .btn_submit {
-            background-color: #0956d2;
-            color: #e9e9f1;
-            border-radius: 30px;
-            border-style: none;
-            font-size: 18px;
-            height: 40px;
-            width: 200px;
-            cursor: pointer;
+          .container_btn_send{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn_submit {
+              background-color: #0956d2;
+              color: #e9e9f1;
+              border-radius: 30px;
+              border-style: none;
+              font-size: 18px;
+              height: 40px;
+              width: 200px;
+              cursor: pointer;
+            }
+
+            .send_message_success{
+              color: #e9e9f1;
+              display: flex;
+              font-size: 18px;
+
+              .checkSquare{
+                color: #1fd32f;
+              }
+            }
           }
         }
       }

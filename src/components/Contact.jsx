@@ -3,16 +3,18 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaCheckSquare } from "react-icons/fa";
 
 import './styles/Content.scss'
 import { useTranslation } from 'react-i18next';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { t } = useTranslation();
   const form = useRef();
+  const [messageSent, setMessageSent] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,6 +26,12 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current.reset();
+          setMessageSent(true);
+
+          setTimeout(() => {
+            setMessageSent(false);
+          }, 5000);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -68,7 +76,12 @@ const Contact = () => {
           <div className="form_elements">
             <textarea className="form_inputs text_area" name="message" placeholder={t('placeholders.text_area')}></textarea>
           </div>
-          <button id="btn_send_message" className="btn_submit" type="submit" value="Send">{t('btn_send_message')} &nbsp;<LuSend /> </button>
+          <div className="container_btn_send">
+            <button id="btn_send_message" className="btn_submit" type="submit" value="Send">{t('btn_send_message')} &nbsp;<LuSend /> </button>
+            {messageSent && (<p id="message_sent" className="send_message_success">{t('message_sent')} <p className="checkSquare">&nbsp;<FaCheckSquare /></p></p>)}
+            {/* <p className="send_message_succes">{messageSent && (<p className="checkSquare">&nbsp;<FaCheckSquare /></p>)}</p> */}
+          </div>
+
         </div>
       </form>
     </div>
