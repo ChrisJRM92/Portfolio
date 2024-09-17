@@ -37,6 +37,8 @@
     "btn_send_message": "Enviar mensaje",
     "message_sent":"Mensaje enviado!",
     "footer_copyright": "Todos los derechos reservados",
+    "lan_option":"Idioma:",
+    "theme_option":"Tema:",
     "projects_frontend": {
         "mazda": {
             "title": "Manual de taller Mazda 3",

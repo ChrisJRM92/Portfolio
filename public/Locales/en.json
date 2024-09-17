@@ -37,6 +37,8 @@
     "btn_send_message": "Send Message",
     "message_sent":"Message sent!",
     "footer_copyright": "All rights reserved",
+    "lan_option":"Language:",
+    "theme_option":"Theme:",
     "projects_frontend": {
         "mazda": {
             "title": "Mazda 3 Workshop Manual",
