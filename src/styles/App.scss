@@ -1,5 +1,5 @@
 /* 1. Displays > 1200px */
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .container {
     height: 100vh;
     // width: auto;
@@ -19,6 +19,10 @@
       justify-content: center;
       align-items: center;
       height: 100%;
+
+      .btns_helps {
+        display: none;
+      }
 
       .arrow_hide {
         padding-bottom: 50px;
@@ -63,7 +67,7 @@
 }
 
 /* 2. Displays between 900px and 1199px */
-@media (min-width: 900px) and (max-width: 1199px) {
+@media (min-width: 900px) and (max-width: 1150px) {
   .container {
     height: 100vh;
     display: grid;
@@ -77,6 +81,10 @@
       justify-content: center;
       align-items: center;
       height: 100%;
+
+      .btns_helps {
+        display: none;
+      }
 
       .arrow_hide {
         display: none;
@@ -131,6 +139,10 @@
       justify-content: center;
       align-items: center;
       height: 100%;
+
+      .btns_helps {
+        display: none;
+      }
 
       .arrow_hide {
         display: none;
@@ -216,6 +228,42 @@
       align-items: center;
       height: 100%;
 
+      .containerCard {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+  
+        .photo_profile {
+          background-position: center;
+          width: 250px;
+          background-color: aqua;
+          align-self: center;
+        }
+      }
+
+      .btns_helps {
+        margin-top: 10px;
+        width: 400px;
+        background-color: #161616;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #232324;
+        padding: 10px 25px;
+        display: block;
+
+        .container_details_data {
+          padding-top: 0;
+          display: flex;
+          justify-content: center;
+
+          .my_proyects,
+          .dowload_cv {
+            font-size: 15px;
+          }
+        }
+      }
+
       .arrow_hide {
         display: block;
       }
@@ -231,6 +279,7 @@
 
     .content {
       padding: 0 20px;
+
       .header_content {
         .main {
           .title_resume {
@@ -242,7 +291,25 @@
           }
         }
 
-        .footer{
+        .contact {
+          .container_contact {
+            .form {
+              // background-color: aqua;
+              display: flex;
+              flex-direction: column;
+
+              .form_card1 {
+                width: 100%;
+              }
+
+              .form_card2 {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .footer {
           margin-bottom: 65px;
         }
       }
@@ -264,25 +331,43 @@
 
 /* Displays < 400px */
 @media (max-width: 399px) {
-  .container {
+  .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // background-color: rgb(246, 246, 66);
+    // background-color: blueviolet;
+    width: 100%;
 
-    .lateralInfo {
+    .lateralInfo{
+      // background-color: aqua;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100%;
 
-      .arrow_hide {
+      .btns_helps{
+        margin-top: 10px;
+        width: 300px;
+        background-color: #161616;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #232324;
+        padding: 10px 25px;
         display: block;
+
+        .container_details_data {
+          padding-top: 0;
+          display: flex;
+          justify-content: center;
+
+          .my_proyects,
+          .dowload_cv {
+            font-size: 11px;
+          }
+        }
       }
     }
 
-    .topMenu {
+    .topMenu{
       display: none;
 
       .container_top_menu {
@@ -290,11 +375,19 @@
       }
     }
 
-    .content {
+    .content{
+      padding: 0 15px;
+
       .header_content {
         .main {
+          .btn_section{
+            display: none;
+          }
+
           .title_resume {
             margin-bottom: 20px;
+            font-size: 30px;
+            display: none;
           }
 
           .container_arrow_down {
@@ -302,7 +395,25 @@
           }
         }
 
-        .footer{
+        .contact {
+          .container_contact {
+            .form {
+              // background-color: aqua;
+              display: flex;
+              flex-direction: column;
+
+              .form_card1 {
+                width: 100%;
+              }
+
+              .form_card2 {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .footer {
           margin-bottom: 65px;
         }
       }

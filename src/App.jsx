@@ -15,6 +15,7 @@ function App() {
     <>
       <div className='container'>
         <div className="lateralInfo"><LateralContent />
+          <div className='btns_helps'><BottomInfo/></div>
           <div className='arrow_hide'><ArrowDown /></div>
         </div>
         <div className="topMenu">
