@@ -7,6 +7,7 @@ import './styles/App.scss'
 
 // -------i18next--------
 import './i18n';
+import BottomInfo from './components/BottomInfo'
 
 function App() {
 
@@ -16,9 +17,14 @@ function App() {
         <div className="lateralInfo"><LateralContent />
           <div className='arrow_hide'><ArrowDown /></div>
         </div>
-        <div className="topMenu"><TopMenu /></div>
+        <div className="topMenu">
+          <div className='container_top_menu'><TopMenu /></div>
+        </div>
         <div className="content"><Content /></div>
-        <div className="bottomMenu"> <BottomMenu /> </div>
+        <div className="bottomMenu">
+          <div className='container_bottom_menu'><BottomMenu /> </div>
+          <div className='container_bottom_info'><BottomInfo /></div>
+        </div>
       </div>
     </>
   )

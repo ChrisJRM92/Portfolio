@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: #111111;
+}
+
+/* 1. Displays > 1200px */
+@media (min-width: 1200px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+  }
+}
+
+/* 2. Displays between 900px and 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+  }
+}
+
+/* 3. Displays between 650px and 899px */
+@media (min-width: 650px) and (max-width: 899px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+  }
+}
+
+/* 4. Displays between 400px and 649px */
+@media (min-width: 400px) and (max-width: 649px) {
+  .container {
+    /* Estilos para pantallas pequeñas (entre 400px y 649px) */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(246, 246, 66);
+  }
+}
+
+/* Displays < 400px */
+@media (max-width: 399px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+  }
+}
