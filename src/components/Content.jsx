@@ -56,7 +56,7 @@ const Content = () => {
       deploy: "https://weather-info-omega.vercel.app/"
     },
   ]
-  
+
   const data_backend = [
     {
       backColor: 'transparent',
@@ -116,6 +116,7 @@ const Content = () => {
           <CardProyect data={data_backend[2]} />
         </div>
       </div>
+
       <div id="about" className="about">
         <button id="btn_about_section" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_about_section')}</button>
         <h2 id="about_title" className="title_section">{t('about_title')}</h2>
@@ -134,39 +135,42 @@ const Content = () => {
           <button id="skill_5" className="skills">{t('skill_5')}</button>
           <button id="skill_6" className="skills">{t('skill_6')}</button>
         </div>
-        <div id="experience" className="experience">
-          <button id="btn_knowledge" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>{t('btn_knowledge')}</button>
-          <h2 id="experience_title" className="title_section">{t('experience_title')}</h2>
-          <p id="experience_description" className="description">{t('experience_description')}</p>
-          <div className="container_exp">
-            <div className="skill_icon"><FaHtml5 /></div>
-            <div className="skill_icon"><FaCss3Alt /></div>
-            <div className="skill_icon"><FaJsSquare /></div>
-            <div className="skill_icon"><FaReact /></div>
-            <div className="skill_icon"><FaSass /></div>
-            <div className="skill_icon"><FaNpm /></div>
-            <div className="skill_icon"><FaNode /></div>
-            <div className="skill_icon"><BiLogoPostgresql /></div>
-            <div className="skill_icon"><IoLogoVercel /></div>
-            <div className="skill_icon"><FaGithub /></div>
-            <div className="skill_icon"><SiRailway /></div>
-            <div className="skill_icon"><SiRender /></div>
-            <div className="skill_icon"><FaAws /></div>
-          </div>
-        </div>
-        <div id="contact_main_content" className="contact">
-          <button id="btn_contact_section" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_contact_section')}</button>
-          <h2 id="contact_title_section" className="title_section">{t('contact_title_section')}</h2>
-          <Contact/>
-        </div>
-
-        <div className="footer">
-          <hr className="hr_footer" />
-          <p id="footer_year_copyright" className="footer_text">© 2024.</p>
-          <p id="footer_copyright" className="footer_text">&nbsp;{t('footer_copyright')}</p>
-        </div>
-
       </div>
+
+      <div id="experience" className="experience">
+        <button id="btn_knowledge" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>{t('btn_knowledge')}</button>
+        <h2 id="experience_title" className="title_section">{t('experience_title')}</h2>
+        <p id="experience_description" className="description">{t('experience_description')}</p>
+        <div className="container_exp">
+          <div className="skill_icon"><FaHtml5 /></div>
+          <div className="skill_icon"><FaCss3Alt /></div>
+          <div className="skill_icon"><FaJsSquare /></div>
+          <div className="skill_icon"><FaReact /></div>
+          <div className="skill_icon"><FaSass /></div>
+          <div className="skill_icon"><FaNpm /></div>
+          <div className="skill_icon"><FaNode /></div>
+          <div className="skill_icon"><BiLogoPostgresql /></div>
+          <div className="skill_icon"><IoLogoVercel /></div>
+          <div className="skill_icon"><FaGithub /></div>
+          <div className="skill_icon"><SiRailway /></div>
+          <div className="skill_icon"><SiRender /></div>
+          <div className="skill_icon"><FaAws /></div>
+        </div>
+      </div>
+      
+      <div id="contact_main_content" className="contact">
+        <button id="btn_contact_section" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_contact_section')}</button>
+        <h2 id="contact_title_section" className="title_section">{t('contact_title_section')}</h2>
+        <Contact />
+      </div>
+
+      <div className="footer">
+        <hr className="hr_footer" />
+        <p id="footer_year_copyright" className="footer_text">© 2024.</p>
+        <p id="footer_copyright" className="footer_text">&nbsp;{t('footer_copyright')}</p>
+      </div>
+
+
     </div>
   )
 }

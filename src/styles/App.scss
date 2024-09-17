@@ -19,7 +19,7 @@
       justify-content: center;
       align-items: center;
       height: 100%;
-  
+
       .arrow_hide {
         padding-bottom: 50px;
         visibility: hidden;
@@ -27,17 +27,17 @@
         background-color: aqua;
       }
     }
-    
+
     .topMenu {
       grid-area: 1 / 2 / 2 / 3;
       // background-color: blue;
       height: 15vh;
-  
-      .container_top_menu{
+
+      .container_top_menu {
         width: 100%;
       }
     }
-    
+
     .content {
       grid-area: 2 / 2 / 3 / 3;
       // background-color: burlywood;
@@ -45,17 +45,17 @@
       padding: 0 10px;
       // width: auto;
     }
-    
+
     .bottomMenu {
       grid-area: 3 / 2 / 4 / 3;
       // background-color: brown;
       height: 10vh;
-  
-      .container_bottom_menu{
+
+      .container_bottom_menu {
         display: none;
       }
-  
-      .container_bottom_info{
+
+      .container_bottom_info {
         display: block;
       }
     }
@@ -64,7 +64,7 @@
 
 /* 2. Displays between 900px and 1199px */
 @media (min-width: 900px) and (max-width: 1199px) {
-  .container{
+  .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -78,18 +78,19 @@
       align-items: center;
       height: 100%;
 
-      .arrow_hide{
+      .arrow_hide {
         display: none;
       }
     }
-  
+
     .topMenu {
       display: none;
-      .container_top_menu{
+
+      .container_top_menu {
         display: none;
       }
     }
-  
+
     .content {
       grid-area: 1 / 2 / 2 / 3;
       // background-color: burlywood;
@@ -97,18 +98,18 @@
       padding: 10px;
       // width: auto;
     }
-  
+
     .bottomMenu {
       grid-area: 2 / 2 / 3 / 3;
       // grid-area: 2 / 2 / 3 / 3;
       // background-color: brown;
       height: 10vh;
-  
-      .container_bottom_menu{
+
+      .container_bottom_menu {
         display: block;
       }
-  
-      .container_bottom_info{
+
+      .container_bottom_info {
         display: none;
       }
     }
@@ -117,7 +118,7 @@
 
 /* 3. Displays between 650px and 899px */
 @media (min-width: 650px) and (max-width: 899px) {
-  .container{
+  .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -131,47 +132,69 @@
       align-items: center;
       height: 100%;
 
-      .arrow_hide{
+      .arrow_hide {
         display: none;
       }
     }
-  
+
     .topMenu {
       display: none;
-      .container_top_menu{
+
+      .container_top_menu {
         display: none;
       }
     }
-  
+
     .content {
       grid-area: 1 / 2 / 2 / 3;
       // background-color: burlywood;
       height: 80vh;
       padding: 10px;
+
       // width: auto;
-      .header_content{
+      .header_content {
+
         // background-color: aqua;
-        .main{
+        .main {
+
           // background-color: blue;
-          .title_resume{
+          .title_resume {
             // background-color: brown;
             font-size: 40px;
           }
         }
+
+        .contact {
+          .container_contact {
+            .form {
+              // background-color: aqua;
+              display: flex;
+              flex-direction: column;
+
+              .form_card1 {
+                width: 100%;
+              }
+
+              .form_card2 {
+                width: 100%;
+              }
+            }
+          }
+        }
       }
     }
-  
+
     .bottomMenu {
       grid-area: 2 / 2 / 3 / 3;
       // grid-area: 2 / 2 / 3 / 3;
       // background-color: brown;
       height: 10vh;
-  
-      .container_bottom_menu{
+
+      .container_bottom_menu {
         display: block;
       }
-  
-      .container_bottom_info{
+
+      .container_bottom_info {
         display: none;
       }
     }
@@ -181,18 +204,120 @@
 /* 4. Displays between 400px and 649px */
 @media (min-width: 400px) and (max-width: 649px) {
   .container {
-    /* Estilos para pantallas pequeñas (entre 400px y 649px) */
-    height: 100%;
-    width: 100%;
-    background-color: rgb(246, 246, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: rgb(246, 246, 66);
+
+    .lateralInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .arrow_hide {
+        display: block;
+      }
+    }
+
+    .topMenu {
+      display: none;
+
+      .container_top_menu {
+        display: none;
+      }
+    }
+
+    .content {
+      padding: 0 20px;
+      .header_content {
+        .main {
+          .title_resume {
+            margin-bottom: 20px;
+          }
+
+          .container_arrow_down {
+            display: none;
+          }
+        }
+
+        .footer{
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    .bottomMenu {
+      background-color: #161616;
+      // background-color: blueviolet;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      z-index: 1;
+      display: block;
+    }
   }
 }
 
 /* Displays < 400px */
 @media (max-width: 399px) {
   .container {
-    height: 100%;
-    width: 100%;
-    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: rgb(246, 246, 66);
+
+    .lateralInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .arrow_hide {
+        display: block;
+      }
+    }
+
+    .topMenu {
+      display: none;
+
+      .container_top_menu {
+        display: none;
+      }
+    }
+
+    .content {
+      .header_content {
+        .main {
+          .title_resume {
+            margin-bottom: 20px;
+          }
+
+          .container_arrow_down {
+            display: none;
+          }
+        }
+
+        .footer{
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    .bottomMenu {
+      background-color: #161616;
+      // background-color: blueviolet;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      z-index: 1;
+      display: block;
+    }
   }
 }
