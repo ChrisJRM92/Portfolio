@@ -55,12 +55,12 @@
     },
     "projects_backend": {
         "mazda": {
-            "title": "Manual de taller Mazda 3",
-            "description": "Adaptación del manual de taller."
+            "title": "Ecommerce API",
+            "description": "Api tienda online con PostgreSQL"
         },
         "pokedex": {
-            "title": "Pokedex virtual",
-            "description": "Consumo de información PokeAPI."
+            "title": "Movies API",
+            "description": "Api peliculas con PostgreSQL"
         },
         "weather": {
             "title": "Información del clima",

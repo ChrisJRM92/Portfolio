@@ -26,10 +26,10 @@ const BottomMenu = () => {
             <p id="lan_option" className="lang_description_bottom_menu">{t('lan_option')}</p>
             <div><Lang /></div>
           </div>
-          <div className="container_dark_bottom_menu">
+          {/* <div className="container_dark_bottom_menu">
             <p id="theme_option" className="lang_description_bottom_menu">{t('theme_option')}</p>
             <div><DarkMode/></div>
-          </div>
+          </div> */}
         </div>
       )}
 

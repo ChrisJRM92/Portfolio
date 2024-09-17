@@ -30,7 +30,7 @@ const LateralContent = () => {
         <a href="https://www.instagram.com/cris_s6662024/" target="_blank" className='social'><FaInstagram /></a>
       </div>
       <div className="btn">
-        <a href="#contact" id="contact" className="btn_contact">{t('contact')}</a>
+        <a href="#contact_main_content" id="contact" className="btn_contact">{t('contact')}</a>
       </div>
     </div>
   )

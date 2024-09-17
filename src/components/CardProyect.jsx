@@ -17,7 +17,7 @@ const CardProyect = ({data}) => {
         <p className='description_card'>{data?.description}</p>
         <div className='butom_proyect'>
           <a href={data?.github} target="_blank" style={{backgroundColor: `${data?.btn_color}`, color: `#e9e9f1`, display: `${data?.display}`}} className='btn_proyects'><p className="btn_github"><FaGithub /></p>&nbsp;&nbsp;Github</a>
-          <a href={data?.deploy} target="_blank" style={{display: `${data?.display}`}} className='btn_proyects'><p className="live"><FaCircle /></p>&nbsp;Live</a>
+          <a href={data?.deploy} target="_blank" style={{display: `${data?.display}`, color:`${data?.color_content}`}} className='btn_proyects'><p className="live"><FaCircle /></p>&nbsp;{data?.button_description}</a>
           <a style={{backgroundColor: `${data?.backColor}`, color: '#FFC300', display: `${data?.display_star}`}} className="btn_proyects"><p className="star"><FaStar /></p></a>
         </div>
       </div>

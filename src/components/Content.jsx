@@ -29,6 +29,8 @@ const Content = () => {
       backColor: 'transparent',
       title: t('projects_frontend.mazda.title'),
       description: t('projects_frontend.mazda.description'),
+      button_description: "Live",
+      color_content: "#ff3b34",
       img: '/mokmazda.png',
       btn_color: "#111111",
       display_star: "block",
@@ -39,6 +41,8 @@ const Content = () => {
       backColor: 'transparent',
       title: t('projects_frontend.pokedex.title'),
       description: t('projects_frontend.pokedex.description'),
+      button_description: "Live",
+      color_content: "#ff3b34",
       img: '/mokpokemon.png',
       btn_color: "#111111",
       display_star: "none",
@@ -49,6 +53,8 @@ const Content = () => {
       backColor: 'transparent',
       title: t('projects_frontend.weather.title'),
       description: t('projects_frontend.weather.description'),
+      button_description: "Live",
+      color_content: "#ff3b34",
       img: '/mokweather.png',
       btn_color: "#111111",
       display_star: "none",
@@ -62,26 +68,32 @@ const Content = () => {
       backColor: 'transparent',
       title: t('projects_backend.mazda.title'),
       description: t('projects_backend.mazda.description'),
-      img: '/mokmazda.png',
+      button_description: "Postman",
+      color_content: "#f15a24",
+      img: '/api_ecommerce.png',
       btn_color: "#111111",
-      display_star: "block",
-      github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
-      deploy: "https://www.mazda3bk.info/"
+      display_star: "none",
+      github: "https://github.com/ChrisJRM92/StoreNodeJs",
+      deploy: "https://documenter.getpostman.com/view/36288861/2sAXjJ5CpH"
     },
     {
       backColor: 'transparent',
       title: t('projects_backend.pokedex.title'),
       description: t('projects_backend.pokedex.description'),
-      img: '/mokpokemon.png',
+      button_description: "Postman",
+      color_content: "#f15a24",
+      img: '/api_movies.png',
       btn_color: "#111111",
       display_star: "none",
-      github: "https://github.com/ChrisJRM92/pokedex_api",
-      deploy: "https://pokedex-api-six-weld.vercel.app/"
+      github: "https://github.com/ChrisJRM92/AppMoviesJsNode",
+      deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k"
     },
     {
       backColor: 'transparent',
       title: t('projects_backend.weather.title'),
       description: t('projects_backend.weather.description'),
+      button_description: "Postman",
+      color_content: "#f15a24",
       img: '/mokweather.png',
       btn_color: "#111111",
       display_star: "none",
@@ -113,7 +125,7 @@ const Content = () => {
         <div className="proyects">
           <CardProyect data={data_backend[0]} />
           <CardProyect data={data_backend[1]} />
-          <CardProyect data={data_backend[2]} />
+          {/* <CardProyect data={data_backend[2]} /> */}
         </div>
       </div>
 

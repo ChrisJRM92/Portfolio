@@ -55,12 +55,12 @@
     },
     "projects_backend": {
         "mazda": {
-            "title": "Mazda 3 Workshop Manual",
-            "description": "Adaptation workshop manual."
+            "title": "Ecommerce API",
+            "description": "Ecommerce App with PostgreSQL"
         },
         "pokedex": {
-            "title": "Virtual Pokedex",
-            "description": "Consumption PokeAPI information."
+            "title": "Movies API",
+            "description": "Movies App with PostgreSQL"
         },
         "weather": {
             "title": "Weather Info",

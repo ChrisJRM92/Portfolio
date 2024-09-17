@@ -19,7 +19,7 @@ const TopMenu = () => {
       <div className="container_btns_help">
         <a className="btn_lang"><Lang/></a>
         {/* <a className="btn_lang"><Lang checked={checked} toggleCheckbox={toggleCheckbox} /></a> */}
-        <a className="btn_dark_mode"><DarkMode /></a>
+        {/* <a className="btn_dark_mode"><DarkMode /></a> */}
         <a href="#contact_main_content" id="btn_contact" className="btnContact">{t('btn_contact')} &nbsp; <p className="icon_message"><BiMessageDots /></p></a>
       </div>
     </div>
