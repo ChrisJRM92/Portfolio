@@ -1,14 +1,18 @@
 *{
   box-sizing: border-box;
   font-family: "Poppins", system-ui;
+  scroll-behavior: smooth;
 }
 
 body{
   margin: 0;
   height: 100vh;
   background-color: #111111;
+  // background-color: aqua;
 }
 
 a, p, h1, h2, h3, button{
   margin: 0;
 }
+
+

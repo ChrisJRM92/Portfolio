@@ -4,28 +4,33 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-import './styles/LateralContent.scss'
+import './styles/LateralContent.scss';
+
+import { useTranslation } from 'react-i18next';
 
 const LateralContent = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className='containerCard'>
       <div className='header'>
         <div className='iconProfile'></div>
-        <h1 className='name'>Christian Romero</h1>
+        <h1 id="home_mobile" className='name'>Christian Romero</h1>
       </div>
       <div className='photo_profile'></div>
-      <p className='profile_description'>Perfil profesional:</p>
-      <h1 className='profession'>Ing. Electromecánico</h1>
-      <h1 className='profession'>Fullstack developer</h1>
+      <p className='profile_description' id="profession">{t('profession')}</p>
+      <h1 className='profession' id="carrer_1">{t('carrer_1')}</h1>
+      <h1 className='profession' id="carrer_2">{t('carrer_2')}</h1>
       <div className='social_networks'>
-        <div className='social'><FaGithub /></div>
-        <div className='social'><FaLinkedin /></div>
-        <div className='social'><FaWhatsapp /></div>
-        <div className='social'><FaFacebook /></div>
-        <div className='social'><FaInstagram /></div>
+        <a href="https://github.com/ChrisJRM92" target="_blank" className='social'><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/chrisjrm/" target="_blank" className='social'><FaLinkedin /></a>
+        <a href="https://wa.me/+593999796892?text=Hola Christian, vi tu portafolio, ¿podríamos planificar una reunión?" target="_blank" className='social'><FaWhatsapp /></a>
+        <a href="https://www.facebook.com/CJRM92/" target="_blank" className='social'><FaFacebook /></a>
+        <a href="https://www.instagram.com/cris_s6662024/" target="_blank" className='social'><FaInstagram /></a>
       </div>
       <div className="btn">
-        <button className="btn_contact">Contáctame</button>
+        <a href="#contact_main_content" id="contact" className="btn_contact">{t('contact')}</a>
       </div>
     </div>
   )
