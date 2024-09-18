@@ -1,0 +1,94 @@
+.containerCard{
+  width: 300px;
+  background-color: #161616;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #232324;
+  padding: 25px;
+
+  .header{
+    display: flex;
+
+    .iconProfile{
+      width: 100px;
+      background-image: url('../profile_avatar1.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .name{
+      font-size: 28px;
+      color: #e9e9f1;
+    }
+  }
+
+  .photo_profile{
+    background-image: url('../profile_photo.jpg');
+    height: 250px;
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 30px;
+  }
+
+  .profile_description{
+    color: #6a6a70;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .profession{
+    color: #e9e9f1;
+    font-size: 20px;
+  }
+
+  .social_networks{
+    display: flex;
+    justify-content: space-between;
+
+    .social{
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: #161616;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #6a6a70;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e9e9f1;
+      font-size: 20px;
+      margin: 5px 0 5px 0;
+
+      &:hover{
+        border-radius: 10px;
+        transition: border-radius 0.3s ease;
+      }
+    }
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+    .btn_contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 40px;
+      width: 200px;
+      border-style: none;
+      border-radius: 30px;
+      background-color: #0057D0;
+      color: #e9e9f1;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+  }
+}
