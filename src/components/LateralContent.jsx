@@ -16,7 +16,7 @@ const LateralContent = () => {
     <div className='containerCard'>
       <div className='header'>
         <div className='iconProfile'></div>
-        <h1 id="home_mobile" className='name'>Christian Romero</h1>
+        <a id="home_mobile" className='name'>Christian Romero</a>
       </div>
       <div className='photo_profile'></div>
       <p className='profile_description' id="profession">{t('profession')}</p>
