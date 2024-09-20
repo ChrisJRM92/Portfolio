@@ -32,9 +32,10 @@ const Content = () => {
       description: t('projects_frontend.mazda.description'),
       button_description: "Live",
       color_content: "#ff3b34",
-      img: '/mokmazda.png',
+      img: '/imgs/mokmazda.png',
       btn_color: "#111111",
       display_star: "block",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
       deploy: "https://www.mazda3bk.info/"
     },
@@ -44,9 +45,10 @@ const Content = () => {
       description: t('projects_frontend.pokedex.description'),
       button_description: "Live",
       color_content: "#ff3b34",
-      img: '/mokpokemon.png',
+      img: '/imgs/mokpokemon.png',
       btn_color: "#111111",
       display_star: "none",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/pokedex_api",
       deploy: "https://pokedex-api-six-weld.vercel.app/"
     },
@@ -56,9 +58,10 @@ const Content = () => {
       description: t('projects_frontend.weather.description'),
       button_description: "Live",
       color_content: "#ff3b34",
-      img: '/mokweather.png',
+      img: '/imgs/mokweather.png',
       btn_color: "#111111",
       display_star: "none",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/weather_info",
       deploy: "https://weather-info-omega.vercel.app/"
     },
@@ -71,9 +74,10 @@ const Content = () => {
       description: t('projects_backend.mazda.description'),
       button_description: "Postman",
       color_content: "#f15a24",
-      img: '/api_ecommerce.png',
+      img: '/imgs/api_ecommerce.png',
       btn_color: "#111111",
       display_star: "none",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/StoreNodeJs",
       deploy: "https://documenter.getpostman.com/view/36288861/2sAXjJ5CpH"
     },
@@ -83,9 +87,10 @@ const Content = () => {
       description: t('projects_backend.pokedex.description'),
       button_description: "Postman",
       color_content: "#f15a24",
-      img: '/api_movies.png',
+      img: '/imgs/api_movies.png',
       btn_color: "#111111",
       display_star: "none",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/AppMoviesJsNode",
       deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k"
     },
@@ -95,12 +100,53 @@ const Content = () => {
       description: t('projects_backend.weather.description'),
       button_description: "Postman",
       color_content: "#f15a24",
-      img: '/mokweather.png',
+      img: '/imgs/mokweather.png',
       btn_color: "#111111",
       display_star: "none",
+      display_android: "none",
       github: "https://github.com/ChrisJRM92/weather_info",
       deploy: "https://weather-info-omega.vercel.app/"
     },
+  ]
+
+  const data_automation = [
+    {
+      backColor: 'transparent',
+      title: t('projects_automation.building.title'),
+      description: t('projects_automation.building.description'),
+      button_description: "Live",
+      color_content: "#f15a24",
+      img: '/imgs/android1.png',
+      btn_color: "#111111",
+      display_star: "none",
+      display_android: "block",
+      github: "https://github.com/ChrisJRM92/uide_project",
+      deploy: "https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing"
+    },
+    // {
+    //   backColor: 'transparent',
+    //   title: t('projects_backend.pokedex.title'),
+    //   description: t('projects_backend.pokedex.description'),
+    //   button_description: "Postman",
+    //   color_content: "#f15a24",
+    //   img: '/imgs/api_movies.png',
+    //   btn_color: "#111111",
+    //   display_star: "none",
+    //   github: "https://github.com/ChrisJRM92/AppMoviesJsNode",
+    //   deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k"
+    // },
+    // {
+    //   backColor: 'transparent',
+    //   title: t('projects_backend.weather.title'),
+    //   description: t('projects_backend.weather.description'),
+    //   button_description: "Postman",
+    //   color_content: "#f15a24",
+    //   img: '/imgs/mokweather.png',
+    //   btn_color: "#111111",
+    //   display_star: "none",
+    //   github: "https://github.com/ChrisJRM92/weather_info",
+    //   deploy: "https://weather-info-omega.vercel.app/"
+    // },
   ]
 
   return (
@@ -148,6 +194,13 @@ const Content = () => {
         <div className="proyects">
           <CardProyect data={data_backend[0]} />
           <CardProyect data={data_backend[1]} />
+          {/* <CardProyect data={data_backend[2]} /> */}
+        </div>
+        <br />
+        <h3 id="title_description_3" className="sub_title_proyects">{t('title_description_3')}</h3>
+        <div className="proyects">
+          <CardProyect data={data_automation[0]} />
+          {/* <CardProyect data={data_backend[1]} /> */}
           {/* <CardProyect data={data_backend[2]} /> */}
         </div>
       </div>

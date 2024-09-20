@@ -16,6 +16,7 @@
     "sub_title_1": "Completed Projects",
     "title_description_1": "Frontend Projects",
     "title_description_2": "Backend Projects",
+    "title_description_3": "Automation and IoT projects",
     "btn_about_section": "About me",
     "about_title": "Professional career",
     "about_description": "Web developer with extensive experience in creating Frontend and Backend projects. I have developed dynamic applications using modern technologies, implementing solutions that range from business logic to user interface.",
@@ -66,6 +67,12 @@
         "weather": {
             "title": "Weather Info",
             "description": "Open Weather API consumption."
+        }
+    },
+    "projects_automation": {
+        "building": {
+            "title": "Lighting control",
+            "description": "Project for UIDE students"
         }
     },
     "placeholders": {

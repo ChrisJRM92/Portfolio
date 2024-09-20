@@ -16,6 +16,7 @@
     "sub_title_1": "Proyectos realizados",
     "title_description_1": "Proyectos Frontend",
     "title_description_2": "Proyectos Backend",
+    "title_description_3": "Proyectos automatización e IoT",
     "btn_about_section": "Sobre mi",
     "about_title": "Trayectoria profesional",
     "about_description": "Desarrollador web con gran experiencia en la creación de proyectos Frontend y Backend. He desarrollado aplicaciones dinámicas con tecnologias modernas, implementando soluciones que van desde la lógica de negocio hasta la interfaz de usuario.",
@@ -66,6 +67,12 @@
         "weather": {
             "title": "Información del clima",
             "description": "Consumo Open Weather API."
+        }
+    },
+    "projects_automation": {
+        "building": {
+            "title": "Control iluminación",
+            "description": "Proyecto para estudiantes UIDE"
         }
     },
     "placeholders": {
