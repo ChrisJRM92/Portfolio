@@ -2,10 +2,10 @@
 @media (min-width: 1150px) {
   .container {
     height: 100vh;
-    // width: auto;
+    // overflow-x: hidden;
     // background-color: #e45656;
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 350px minmax(0, 1fr);
     // grid-template-rows: 15% 75% 10%;
     grid-template-rows: 15% 75% 10%;
     grid-column-gap: 0px;
@@ -47,7 +47,7 @@
       // background-color: burlywood;
       height: 75vh;
       padding: 0 10px;
-      // width: auto;
+      width: 100%;
     }
 
     .bottomMenu {
@@ -380,6 +380,7 @@
 
       .header_content {
         .main {
+          
           .btn_section{
             display: none;
           }
