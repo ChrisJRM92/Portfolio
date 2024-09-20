@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 import './styles/CardProyect.scss'
 
 const CardProyect = ({data}) => {
@@ -18,7 +17,7 @@ const CardProyect = ({data}) => {
         <div className='butom_proyect'>
           <a href={data?.github} target="_blank" style={{backgroundColor: `${data?.btn_color}`, color: `#e9e9f1`, display: `${data?.display}`}} className='btn_proyects'><p className="btn_github"><FaGithub /></p>&nbsp;&nbsp;Github</a>
           <a href={data?.deploy} target="_blank" style={{display: `${data?.display}`, color:`${data?.color_content}`}} className='btn_proyects'><p className="live"><FaCircle /></p>&nbsp;{data?.button_description}</a>
-          <a style={{backgroundColor: `${data?.backColor}`, color: '#FFC300', display: `${data?.display_star}`}} className="btn_proyects"><p className="star"><FaStar /></p></a>
+          <a style={{backgroundColor: `${data?.backColor}`, color: `${data?.color_component}`, display: `${data?.display_icon}`, fontSize: `${data?.icon_size}`}} className="btn_proyects"><p className="star">{data?.component}</p></a>
         </div>
       </div>
     </div>

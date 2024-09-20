@@ -12,8 +12,8 @@ const TopMenu = () => {
     <div className="container_top_menu">
       <div className="container_btns_nav">
         <a href="#main" id="btn_home" className="btn">{t('btn_home')}</a>
-        <a href="#portfolio" id="btn_portfolio" className="btn">{t('btn_portfolio')}</a>
         <a href="#about" id="btn_about" className="btn">{t('btn_about')}</a>
+        <a href="#portfolio" id="btn_portfolio" className="btn">{t('btn_portfolio')}</a>
         <a href="#experience" id="btn_experience" className="btn">{t('btn_experience')}</a>
       </div>
       <div className="container_btns_help">

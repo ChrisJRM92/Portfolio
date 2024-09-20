@@ -12,7 +12,9 @@
 
     .iconProfile{
       width: 100px;
-      background-image: url('../profile_avatar1.png');
+      // color: #e9e9f1;
+      // font-size: 60px;
+      background-image: url('../imgs/profile_avatar1.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -21,11 +23,13 @@
     .name{
       font-size: 28px;
       color: #e9e9f1;
+      text-decoration: none;
+      font-weight: 600;
     }
   }
 
   .photo_profile{
-    background-image: url('../profile_photo.jpg');
+    background-image: url('../imgs/profile_photo.jpg');
     height: 250px;
     // background-position: center;
     background-repeat: no-repeat;
@@ -47,9 +51,10 @@
   .social_networks{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 
     .social{
-      width: 40px;
+      width: 100%;
       height: 40px;
       border-radius: 50px;
       background-color: #161616;

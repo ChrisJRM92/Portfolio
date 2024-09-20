@@ -3,6 +3,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { MdLogoDev } from "react-icons/md";
+import { BsPersonSquare } from "react-icons/bs";
+
 
 import './styles/LateralContent.scss';
 
@@ -16,7 +19,7 @@ const LateralContent = () => {
     <div className='containerCard'>
       <div className='header'>
         <div className='iconProfile'></div>
-        <h1 id="home_mobile" className='name'>Christian Romero</h1>
+        <a id="home_mobile" className='name'>Christian Romero</a>
       </div>
       <div className='photo_profile'></div>
       <p className='profile_description' id="profession">{t('profession')}</p>
@@ -26,8 +29,8 @@ const LateralContent = () => {
         <a href="https://github.com/ChrisJRM92" target="_blank" className='social'><FaGithub /></a>
         <a href="https://www.linkedin.com/in/chrisjrm/" target="_blank" className='social'><FaLinkedin /></a>
         <a href="https://wa.me/+593999796892?text=Hola Christian, vi tu portafolio, ¿podríamos planificar una reunión?" target="_blank" className='social'><FaWhatsapp /></a>
-        <a href="https://www.facebook.com/CJRM92/" target="_blank" className='social'><FaFacebook /></a>
-        <a href="https://www.instagram.com/cris_s6662024/" target="_blank" className='social'><FaInstagram /></a>
+        {/* <a href="https://www.facebook.com/CJRM92/" target="_blank" className='social'><FaFacebook /></a> */}
+        {/* <a href="https://www.instagram.com/cris_s6662024/" target="_blank" className='social'><FaInstagram /></a> */}
       </div>
       <div className="btn">
         <a href="#contact_main_content" id="contact" className="btn_contact">{t('contact')}</a>
