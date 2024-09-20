@@ -16,7 +16,9 @@ import { FaGithub } from "react-icons/fa";
 import { SiRailway } from "react-icons/si";
 import { SiRender } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 // import { IoIosArrowUp } from "react-icons/io";
+import { IoLogoAndroid } from "react-icons/io";
 import ArrowDown from "./ArrowDown";
 import { useTranslation } from 'react-i18next';
 import Contact from "./Contact";
@@ -34,8 +36,10 @@ const Content = () => {
       color_content: "#ff3b34",
       img: '/imgs/mokmazda.png',
       btn_color: "#111111",
-      display_star: "block",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "block",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
       deploy: "https://www.mazda3bk.info/"
     },
@@ -47,8 +51,10 @@ const Content = () => {
       color_content: "#ff3b34",
       img: '/imgs/mokpokemon.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "none",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/pokedex_api",
       deploy: "https://pokedex-api-six-weld.vercel.app/"
     },
@@ -60,8 +66,10 @@ const Content = () => {
       color_content: "#ff3b34",
       img: '/imgs/mokweather.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "none",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/weather_info",
       deploy: "https://weather-info-omega.vercel.app/"
     },
@@ -76,8 +84,10 @@ const Content = () => {
       color_content: "#f15a24",
       img: '/imgs/api_ecommerce.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "none",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/StoreNodeJs",
       deploy: "https://documenter.getpostman.com/view/36288861/2sAXjJ5CpH"
     },
@@ -89,8 +99,10 @@ const Content = () => {
       color_content: "#f15a24",
       img: '/imgs/api_movies.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "none",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/AppMoviesJsNode",
       deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k"
     },
@@ -102,8 +114,10 @@ const Content = () => {
       color_content: "#f15a24",
       img: '/imgs/mokweather.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "none",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "none",
+      icon_size: '15px',
       github: "https://github.com/ChrisJRM92/weather_info",
       deploy: "https://weather-info-omega.vercel.app/"
     },
@@ -118,8 +132,10 @@ const Content = () => {
       color_content: "#f15a24",
       img: '/imgs/android1.png',
       btn_color: "#111111",
-      display_star: "none",
-      display_android: "block",
+      component: <IoLogoAndroid />,
+      color_component: '#1bdb5e',
+      display_icon: "block",
+      icon_size: '20px',
       github: "https://github.com/ChrisJRM92/uide_project",
       deploy: "https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing"
     },

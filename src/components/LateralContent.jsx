@@ -3,6 +3,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { MdLogoDev } from "react-icons/md";
+import { BsPersonSquare } from "react-icons/bs";
+
 
 import './styles/LateralContent.scss';
 
