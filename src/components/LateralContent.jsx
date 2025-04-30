@@ -6,7 +6,6 @@ import { FaInstagram } from "react-icons/fa";
 import { MdLogoDev } from "react-icons/md";
 import { BsPersonSquare } from "react-icons/bs";
 
-
 import './styles/LateralContent.scss';
 
 import { useTranslation } from 'react-i18next';

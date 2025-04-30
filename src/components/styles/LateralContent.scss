@@ -11,13 +11,16 @@
     display: flex;
 
     .iconProfile{
-      width: 100px;
+      width: 3px;
+      margin-right: 10px;
+      border-radius: 10px;
       // color: #e9e9f1;
       // font-size: 60px;
-      background-image: url('../imgs/profile_avatar1.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+      //background-image: url('../imgs/profile_avatar1.png');
+      //background-position: center;
+      //background-repeat: no-repeat;
+      //background-size: contain;
+      background-color: #3654ff;
     }
 
     .name{
