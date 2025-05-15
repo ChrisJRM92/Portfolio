@@ -41,7 +41,7 @@ const Content = () => {
       display_icon: "block",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
-      deploy: "https://www.mazda3bk.info/"
+      deploy: "https://mazda3-workshop-manual-0309.vercel.app/"
     },
     {
       backColor: 'transparent',
