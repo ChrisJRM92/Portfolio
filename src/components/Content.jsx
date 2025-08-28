@@ -27,6 +27,26 @@ import { Carousel } from 'nuka-carousel';
 const Content = () => {
   const { t } = useTranslation();
 
+  const data_fullstack = [
+    {
+      backColor: 'transparent',
+      title: t('projects_fullstack.aeimport.title'),
+      description: t('projects_fullstack.aeimport.description'),
+      button_description: "Live",
+      color_content: "#ff3b34",
+      img: '/imgs/mokaeimport.png',
+      btn_color: "#111111",
+      component: <FaStar />,
+      color_component: '#FFC300',
+      display_icon: "block",
+      icon_size: '15px',
+      github: "",
+      deploy: "",
+      state_github: t('projects_fullstack.aeimport.state_github'),
+      tech: ['React', 'NodeJs', 'PostgreSQL', 'AWS S3'],
+      border_color: '#52f174ff'
+    }]
+
   const data_frontend = [
     {
       backColor: 'transparent',
@@ -41,7 +61,8 @@ const Content = () => {
       display_icon: "block",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/mazda3_workshop_manual_0309",
-      deploy: "https://mazda3-workshop-manual-0309.vercel.app/"
+      deploy: "https://mazda3-workshop-manual-0309.vercel.app/",
+      tech: ['React', 'Sass', 'html']
     },
     {
       backColor: 'transparent',
@@ -56,7 +77,8 @@ const Content = () => {
       display_icon: "none",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/pokedex_api",
-      deploy: "https://pokedex-api-six-weld.vercel.app/"
+      deploy: "https://pokedex-api-six-weld.vercel.app/",
+      tech: ['React', 'Sass', 'html', 'RRouter', 'Axios']
     },
     {
       backColor: 'transparent',
@@ -71,7 +93,8 @@ const Content = () => {
       display_icon: "none",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/weather_info",
-      deploy: "https://weather-info-omega.vercel.app/"
+      deploy: "https://weather-info-omega.vercel.app/",
+      tech: ['React', 'Sass', 'html', 'RRouter', 'Axios']
     },
   ]
 
@@ -89,7 +112,8 @@ const Content = () => {
       display_icon: "none",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/StoreNodeJs",
-      deploy: "https://documenter.getpostman.com/view/36288861/2sAXjJ5CpH"
+      deploy: "https://documenter.getpostman.com/view/36288861/2sAXjJ5CpH",
+      tech: ['NodeJs', 'Express', 'PostgreSQL', 'Sequelize' ]
     },
     {
       backColor: 'transparent',
@@ -104,7 +128,8 @@ const Content = () => {
       display_icon: "none",
       icon_size: '15px',
       github: "https://github.com/ChrisJRM92/AppMoviesJsNode",
-      deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k"
+      deploy: "https://documenter.getpostman.com/view/36288861/2sAXqqci9k",
+      tech: ['NodeJs', 'Express', 'PostgreSQL', 'Sequelize' ]
     },
     {
       backColor: 'transparent',
@@ -137,7 +162,8 @@ const Content = () => {
       display_icon: "block",
       icon_size: '20px',
       github: "https://github.com/ChrisJRM92/uide_project",
-      deploy: "https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing"
+      deploy: "https://drive.google.com/file/d/1v01SZuylHLaKnZuNZJBHsm_6bEgNXCII/view?usp=sharing",
+      tech: ['Android Studio', 'Java']
     },
     // {
     //   backColor: 'transparent',
@@ -199,6 +225,13 @@ const Content = () => {
       <div id="portfolio" className="portfolio">
         <button id="btn_portfolio_content" className="btn_section"><p className="icon_star"><PiStarFourFill /></p>&nbsp;{t('btn_portfolio_content')}</button>
         <h2 id="sub_title_1" className="title_section">{t('sub_title_1')}</h2>
+        <h3 id="title_description_1" className="sub_title_proyects">{t('title_description_0')}</h3>
+        <div className="proyects">
+          <CardProyect data={data_fullstack[0]} />
+          {/* <CardProyect data={data_frontend[1]} /> */}
+          {/* <CardProyect data={data_frontend[2]} /> */}
+        </div>
+        
         <h3 id="title_description_1" className="sub_title_proyects">{t('title_description_1')}</h3>
         <div className="proyects">
           <CardProyect data={data_frontend[0]} />
@@ -238,7 +271,7 @@ const Content = () => {
           <div className="skill_icon"><FaGithub /><p>Github</p></div>
           <div className="skill_icon"><SiRailway /><p>Railway</p></div>
           <div className="skill_icon"><SiRender /><p>Render</p></div>
-          <div className="skill_icon"><FaAws /><p>Amazon web services</p></div>
+          <div className="skill_icon"><FaAws /><p>AWS S3</p></div>
         </div>
       </div>
 
