@@ -23,6 +23,7 @@ import ArrowDown from "./ArrowDown";
 import { useTranslation } from 'react-i18next';
 import Contact from "./Contact";
 import { Carousel } from 'nuka-carousel';
+import CardProjectDescription from "./CardProjectDescription";
 
 const Content = () => {
   const { t } = useTranslation();
@@ -227,7 +228,11 @@ const Content = () => {
         <h2 id="sub_title_1" className="title_section">{t('sub_title_1')}</h2>
         <h3 id="title_description_1" className="sub_title_proyects">{t('title_description_0')}</h3>
         <div className="proyects">
-          <CardProyect data={data_fullstack[0]} />
+          <div className="proyects_full">
+            <CardProyect data={data_fullstack[0]} />
+            <CardProjectDescription />
+          </div>
+          
           {/* <CardProyect data={data_frontend[1]} /> */}
           {/* <CardProyect data={data_frontend[2]} /> */}
         </div>
